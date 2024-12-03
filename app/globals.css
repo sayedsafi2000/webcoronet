@@ -2,20 +2,283 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap');
 
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* components/ThreeVerticalLines.css */
+.vertical-lines {
+  position: fixed; /* Use fixed to cover the entire viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Allow clicks to pass through */
+  z-index: -1; /* Ensure lines are behind other elements */
+}
+
+.line {
+  position: absolute;
+  width: 1.5px; /* Width of the vertical lines */
+  background-color: rgba(144, 141, 141, 0.1); /* Color of the lines */
+}
+
+.line1 {
+  left: 25%; /* Position of the first line */
+  height: 100%;
+}
+
+.line2 {
+  left: 50%; /* Position of the second line */
+  height: 100%;
+}
+
+.line3 {
+  left: 75%; /* Position of the third line */
+  height: 100%;
+}
+
+h1{
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: 0.0em;
+  font-family: "Literata", serif;
+  line-height: 3rem;
+}
+h2{
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "Literata", serif;
+}
+h3{
+  font-size: 28px;
+  font-weight: 400;
+  font-family: "Literata", serif;
+}
+h4{
+  font-size: 12px;
+  font-weight: 200;
+  letter-spacing: 0.3em;
+  font-family: "Heebo", serif;
+  color: rgb(127, 126, 126);
+  text-transform: uppercase;
+}
+h5{
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  font-family: "Heebo", serif;
+  color: black;
+}
+p{
+  color: #666666;
+  font-family: "Literata", serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.footer-heading{
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Literata", serif;
+  color: white;
+
+}
+
+.footer-p{
+  font-size: 17px;
+  font-weight: 200;
+  font-family: "Literata", serif;
+  color: white;
+}
+
+/* Initial state of the image */
+.hover-image {
+  position: relative;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Trigger the animation on hover */
+.hover-image:hover {
+  animation: vanish-and-reappear 1.5s ease-in forwards;
+}
+
+
+@keyframes appear {
+  from{
+    opacity: 0;
+    scale: 0.5;
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+}
+.animation{
+  animation: appear ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0%;
+}
+
+
+/* Keyframes for vanish-and-reappear animation */
+@keyframes vanish-and-reappear {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  51% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media only screen and (max-width:768px){
+  h1{
+    font-size: 44px;
+    font-weight: 400;
+    letter-spacing: 0.0em;
+    font-family: "Literata", serif;
+    line-height: 3rem;
+  }
+  h2{
+    font-size: 28px;
+    font-weight: 400;
+    font-family: "Literata", serif;
+  }
+  h3{
+    font-size: 22px;
+    font-weight: 400;
+    font-family: "Literata", serif;
+  }
+  h4{
+    font-size: 10px;
+    font-weight: 200;
+    letter-spacing: 0.3em;
+    font-family: "Heebo", serif;
+    color: rgb(127, 126, 126);
+    text-transform: uppercase;
+  }
+  h5{
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    font-family: "Heebo", serif;
+    color: black;
+  }
+  p{
+    color: #666666;
+    font-family: "Literata", serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+  .footer-heading{
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Literata", serif;
+    color: white;
+  
+  }
+  
+  .footer-p{
+    font-size: 14px;
+    font-weight: 200;
+    font-family: "Literata", serif;
+    color: white;
+  }
+  .line1 {
+    left: 10%; /* Position of the first line */
+    height: 100%;
+  }
+  
+  .line2 {
+    left: 500%; /* Position of the second line */
+    height: 100%;
+  }
+  
+  .line3 {
+    left: 85%; /* Position of the third line */
+    height: 100%;
+  }
+   
+}
+@media only screen and (max-width:576px){
+  h1{
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 0.0em;
+    font-family: "Literata", serif;
+    line-height: 3rem;
+  }
+  h2{
+    font-size: 22px;
+    font-weight: 400;
+    font-family: "Literata", serif;
+  }
+  h3{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Literata", serif;
+  }
+  h4{
+    font-size: 8px;
+    font-weight: 200;
+    letter-spacing: 0.3em;
+    font-family: "Heebo", serif;
+    color: rgb(127, 126, 126);
+    text-transform: uppercase;
+  }
+  h5{
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    font-family: "Heebo", serif;
+    color: black;
+  }
+  p{
+    color: #666666;
+    font-family: "Literata", serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+  .footer-heading{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Literata", serif;
+    color: white;
+  
+  }
+  
+  .footer-p{
+    font-size: 12px;
+    font-weight: 200;
+    font-family: "Literata", serif;
+    color: white;
+  }
+  .line1 {
+    left: 0%; /* Position of the first line */
+    height: 100%;
+  }
+  
+  .line2 {
+    left: 50%; /* Position of the second line */
+    height: 100%;
+  }
+  
+  .line3 {
+    left: 0%; /* Position of the third line */
+    height: 100%;
+  }
+   
 }

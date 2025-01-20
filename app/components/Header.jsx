@@ -48,7 +48,7 @@ const Header = () => {
           {/* Logo */}
           <Link href="/">
             <h1 className="text-2xl xl:text-4xl font-semibold">
-              <span className="text-white bg-black py-2 pl-6">Web </span>Coroner
+              <span className="text-white bg-black py-2 pl-6">Web </span>Coronet
             </h1>
           </Link>
 

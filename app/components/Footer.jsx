@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FaTwitter, FaFacebook, FaDribbble, FaYoutube } from "react-icons/fa";
 import { GoHome } from "react-icons/go";
 import { AlarmClock, HomeIcon, MailIcon, PhoneCallIcon } from "lucide-react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -38,21 +39,21 @@ const Footer = () => {
           <h3 className="footer-heading">Contact Info</h3>
           <ul className="space-y-4 text-sm">
             <li className="flex items-center gap-2">
-              <a href="https://map.google.com/198 West 21th Street 721" className="inline-block footer-p"><HomeIcon/></a>
+              <a href="https://map.google.com/198 West 21th Street 721" className="inline-block footer-p"><HomeIcon /></a>
               198 West 21th Street 721
             </li>
             <li className="flex items-center gap-2">
-              <a href="https://map.google.com/New York, NY 10010" className="inline-block footer-p"><AlarmClock/></a>
+              <a href="https://map.google.com/New York, NY 10010" className="inline-block footer-p"><AlarmClock /></a>
               New York, NY 10010
             </li>
             <li className="flex items-center gap-2">
-              <a href="https://mail.google.com/qi22@example.com" className="inline-block footer-p"><MailIcon/></a>
+              <a href="https://mail.google.com/qi22@example.com" className="inline-block footer-p"><MailIcon /></a>
               <a href="mailto:qi22@example.com" className="hover:underline">
                 qi22@example.com
               </a>
             </li>
             <li className="flex items-center gap-2">
-              <a href="+88 (0) 101 0000 000" className="inline-block footer-p"><PhoneCallIcon/></a>
+              <a href="+88 (0) 101 0000 000" className="inline-block footer-p"><PhoneCallIcon /></a>
               +88 (0) 101 0000 000
             </li>
           </ul>
@@ -66,15 +67,19 @@ const Footer = () => {
           </p>
           <div className="flex gap-4">
             <Link href="#">
-              <img
-                src="/images/app-store.png"
+              <Image
+                height={100}
+                width={100}
+                src="/app-store.png"
                 alt="App Store"
                 className="w-32"
               />
             </Link>
             <Link href="#">
-              <img
-                src="/images/google-play.png"
+              <Image
+                height={100}
+                width={100}
+                src="/google-play.png"
                 alt="Google Play"
                 className="w-32"
               />

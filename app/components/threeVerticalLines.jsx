@@ -1,5 +1,4 @@
-// components/ThreeVerticalLines.js
-import React from 'react';
+import React from 'react'
 
 const ThreeVerticalLines = () => {
   return (

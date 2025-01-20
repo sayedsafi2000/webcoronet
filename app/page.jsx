@@ -1,6 +1,5 @@
 "use client"
 import React from "react";
-import ThreeVerticalLines from "./components/threeVerticalLines";
 import Herotext from "./components/herotext";
 import Service from "./components/service";
 import Portfolio from "./components/portfolio";

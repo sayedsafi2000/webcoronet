@@ -3,9 +3,9 @@ import localFont from "next/font/local";
 import Heebo from "next/font/local";
 import Litarata from "next/font/local";
 import "./globals.css";
-import ThreeVerticalLines from "./components/ThreeVerticalLines";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import ThreeVerticalLines from "./components/threeVerticalLines";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

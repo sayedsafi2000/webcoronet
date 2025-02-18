@@ -17,12 +17,12 @@ const Service = () => {
                         <PiPen className='text-4xl font-[100] border-0 text-gray-500' />
                     </div>
                     <div className='flex flex-col gap-3 text-start '>
-                        <h3 className='text-md lg:text-xl'>Web Design</h3>
-                        <p className=''>- Custom Website Design
+                        <h3 className='text-md lg:text-xl'>Mobile App</h3>
+                        <p className=''>- Custom Mobile App Design
                         </p>
-                        <p className=''>- Responsive Web Design
+                        <p className=''>- Smooth UI/UX Experience
                         </p>
-                        <p className=''> - User Experience (UX) Design
+                        <p className=''> - Cross-Platform Development
                         </p>
                         <Accordion type="single" collapsible className="w-full">
                             <AccordionItem value="item-1">

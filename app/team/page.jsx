@@ -14,7 +14,7 @@ const Team = () => {
                     <a href='https://asadsnapper.com/' target='blank' className='px-12 py-3 bg-black text-white'>Read More</a>
                 </div>
                 <div className='animation'>
-                    <Image className='w-full lg:w-10/12 rounded-2xl mx-auto' src="/Asad-Jaman.jpg"  width={1000} height={1000} alt='website' />
+                    <Image className='w-full lg:w-2/3 rounded-2xl mx-auto' src="/Asad-Jaman.jpg"  quality={100} width={1000} height={1000} alt='website' />
                 </div>
             </div>
             <div className="flex flex-col lg:flex-row-reverse items-center justify-between gap-0 animation mt-20">
@@ -25,7 +25,7 @@ const Team = () => {
                     <a target='blank' href='https://sayed-safi.webcoronet.com/' className='px-12 py-3 bg-black text-white'>Read More</a>
                 </div>
                 <div className='animation '>
-                    <Image src="/sayed-safi-big.jpg" className='w-full lg:w-2/3 rounded-2xl mx-0' width={1000} height={1000} alt='website' />
+                    <Image src="/sayed-safi-big.jpg" className='w-full lg:w-2/3 rounded-2xl mx-0' quality={100} width={1000} height={1000} alt='website' />
                 </div>
             </div>
             <div className="flex flex-col lg:flex-row items-center justify-between gap-0 animation mt-20">
@@ -36,7 +36,7 @@ const Team = () => {
                     <a href='https://dribbble.com/ImTitun' target='blank'  className='px-12 py-3 bg-black text-white'>Read More</a>
                 </div>
                 <div className='animation '>
-                    <Image src="/titon.jpg" className='w-full lg:w-2/3 rounded-2xl mx-0' width={1000} height={1000} alt='website' />
+                    <Image src="/titon.jpg" className='w-full lg:w-2/3 rounded-2xl mx-0' quality={100} width={1000} height={1000} alt='website' />
                 </div>
             </div>
             <div className="flex flex-col lg:flex-row-reverse items-center justify-between gap-0 animation mt-20">
@@ -47,7 +47,7 @@ const Team = () => {
                     <a href='https://web.facebook.com/mehjebin.fareea' target='blank'  className='px-12 py-3 bg-black text-white'>Read More</a>
                 </div>
                 <div className='animation '>
-                    <Image src="/mehjabin.jpg" className='w-full lg:w-2/3 rounded-2xl mx-0' width={1000} height={1000} alt='website' />
+                    <Image src="/marketer.jpg" className='w-full lg:w-2/3 rounded-2xl mx-0' quality={100} width={1000} height={1000} alt='website' />
                 </div>
             </div>
         </div>

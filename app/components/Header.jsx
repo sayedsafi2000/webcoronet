@@ -102,40 +102,40 @@ const Header = () => {
         </div>
       </header>
 
-      {/* Drawer */}
-      <div
-        className={`fixed top-0 right-0 bg-black w-3/12 h-full shadow-lg flex flex-col transform transition-transform duration-500 ease-in-out z-50 ${
-          isDrawerOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
-        <div className="flex justify-end p-4">
-          <button onClick={toggleDrawer}>
-            <AiOutlineClose className="text-2xl text-white" />
-          </button>
-        </div>
-        <div className="flex flex-col flex-grow px-16 py-20 gap-6 text-white">
-          <h3>
-            <span className="bg-white text-black pl-10 py-2">Web</span>Coronet
-          </h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <div className="flex gap-10">
-            <Link href="https://www.twitter.com">
-              <FaTwitter className="text-white hover:text-gray-500" />
-            </Link>
-            <Link href="https://www.facebook.com">
-              <FaFacebook className="text-white hover:text-gray-500" />
-            </Link>
-            <Link href="https://www.dribble.com">
-              <FaDribbble className="text-white hover:text-gray-500" />
-            </Link>
-            <Link href="https://www.youtube.com">
-              <FaYoutube className="text-white hover:text-gray-500" />
-            </Link>
+      {/* /* Drawer */}
+        <div
+          className={`fixed top-0 right-0 bg-black w-3/12 h-full shadow-lg flex flex-col transform transition-transform duration-500 ease-in-out z-50 ${
+            isDrawerOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
+          <div className="flex justify-end p-4">
+            <button onClick={toggleDrawer}>
+          <AiOutlineClose className="text-2xl text-white" />
+            </button>
+          </div>
+          <div className="flex flex-col flex-grow px-16 py-20 gap-6 text-white">
+            <h3>
+          <span className="bg-white text-black pl-10 py-2">Web</span>Coronet
+            </h3>
+            <p>Welcome to Web Coronet, your go-to source for web development insights.</p>
+            <div className="flex gap-10">
+          <Link href="https://www.twitter.com">
+            <FaTwitter className="text-white hover:text-gray-500" />
+          </Link>
+          <Link href="https://www.facebook.com">
+            <FaFacebook className="text-white hover:text-gray-500" />
+          </Link>
+          <Link href="https://www.dribbble.com">
+            <FaDribbble className="text-white hover:text-gray-500" />
+          </Link>
+          <Link href="https://www.youtube.com">
+            <FaYoutube className="text-white hover:text-gray-500" />
+          </Link>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Background overlay for Drawer */}
+        {/* Background overlay for Drawer */}
       {isDrawerOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-50 z-40"

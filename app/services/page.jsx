@@ -31,9 +31,9 @@ const Services = () => {
                     <div className='flex flex-col items-center w-full lg:w-1/2 gap-6'>
                         <Accordion type="single" collapsible className="w-full border-b-2">
                             <AccordionItem value="item-1">
-                                <AccordionTrigger className="text-2xl">Web Design</AccordionTrigger>
+                                <AccordionTrigger className="text-2xl">Mobile App </AccordionTrigger>
                                 <AccordionContent>
-                                Our agency specializes in creating visually appealing and user-centric website designs. We focus on delivering intuitive, responsive, and engaging layouts that reflect your brand identity and enhance user experience.
+                                Our agency specializes in creating visually appealing and user-centric mobile apps. We focus on delivering intuitive, responsive, and engaging layouts that reflect your brand identity and enhance user experience.
                                 </AccordionContent>
                             </AccordionItem>
                         </Accordion>

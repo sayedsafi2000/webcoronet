@@ -20,7 +20,7 @@ const GetInTOuch = () => {
                     <div className='flex flex-col gap-3 text-start justify-between '>
                         <div className="flex flex-col">
                             <h3>Product research</h3>
-                            <p className=''>Lorem proin gravida nibh vel velit au sollicitudin lorem quis bibe auctor, consequat gravida nibh.</p>
+                            <p className=''>We conduct thorough product research to ensure that your product meets market needs and stands out from the competition.</p>
                         </div>
                         <Accordion type="single" collapsible className="w-full">
                             <AccordionItem value="item-1">
@@ -39,7 +39,7 @@ const GetInTOuch = () => {
                     <div className='flex flex-col gap-3 text-start justify-between'>
                         <div className="flex flex-col">
                             <h3>Design & Development</h3>
-                            <p className=''>Lorem proin gravida nibh vel velit au sollicitudin lorem quis bibe auctor, consequat gravida nibh.</p>
+                            <p className=''>Our design and development team sworks collaboratively to create visually appealing and highly functional products.</p>
                         </div>
                         <Accordion type="single" collapsible className="w-full">
                             <AccordionItem value="item-1">

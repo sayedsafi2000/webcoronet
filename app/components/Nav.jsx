@@ -24,10 +24,10 @@ const links = [
         name:"contact",
         path:"/contact"
     },
-    {
-        name:"blog",
-        path:"/blog"
-    },
+    // {
+    //     name:"blog",
+    //     path:"/blog"
+    // },
 ];
 
 const Nav = () => {

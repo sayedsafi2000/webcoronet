@@ -67,11 +67,9 @@ const Contact = () => {
                             Our office in Bangladesh
                         </h2>
                         <address className="text-gray-600 not-italic">
-                            198 West 21th Street, Suite 721 <br />
-                            New York, NY 10010
-                        </address>
-                        <p className="text-gray-600 mt-2">coronet.com</p>
-                        <p className="text-gray-600">+88 (0) 101 0000 000</p>
+                            Shahjalal Tower, Payra, Amborkhana, Sylhet</address>
+                        <p className="text-gray-600 mt-2">service@webcoronet.com</p>
+                        <p className="text-gray-600">+8801759231288</p>
                     </div>
                 </div>
             </div>

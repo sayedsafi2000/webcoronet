@@ -15,9 +15,6 @@ const Footer = () => {
           <div>
             <h1 className="text-3xl font-bold text-white"><span className="bg-white text-black pl-4 py-3">Web </span>Coronet</h1>
           </div>
-          <p className="footer-p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque actraqum nun nolor sit amet augue dolor.
-          </p>
           <div className="flex gap-4 text-xl">
             <Link href="#">
               <FaTwitter />
@@ -34,45 +31,43 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Center Section */}
         <div className="space-y-6">
           <h3 className="footer-heading">Contact Info</h3>
           <ul className="space-y-4 text-sm">
             <li className="flex items-center gap-2">
-              <a href="https://map.google.com/198 West 21th Street 721" className="inline-block footer-p"><HomeIcon /></a>
-              198 West 21th Street 721
+              <a href="Shahjalal Tower, Payra, Amborkhana, Sylhet" className="inline-block footer-p"><HomeIcon /></a>
+              Shahjalal Tower, Payra, Amborkhana, Sylhet
             </li>
             <li className="flex items-center gap-2">
-              <a href="https://map.google.com/New York, NY 10010" className="inline-block footer-p"><AlarmClock /></a>
-              New York, NY 10010
+              <a href="https://map.google.com/Sylhet, Bangladesh" className="inline-block footer-p"><AlarmClock /></a>
+              Sylhet, Bangladesh
             </li>
             <li className="flex items-center gap-2">
-              <a href="https://mail.google.com/qi22@example.com" className="inline-block footer-p"><MailIcon /></a>
-              <a href="mailto:qi22@example.com" className="hover:underline">
-                qi22@example.com
+              <a href="https://mail.google.com/mail-info@webcoronet.com" className="inline-block footer-p"><MailIcon /></a>
+              <a href="mailto:mail-info@webcoronet.com" className="hover:underline">
+                mail-info@webcoronet.com
               </a>
             </li>
             <li className="flex items-center gap-2">
-              <a href="+88 (0) 101 0000 000" className="inline-block footer-p"><PhoneCallIcon /></a>
-              +88 (0) 101 0000 000
+              <a href="+8801759231288" className="inline-block footer-p"><PhoneCallIcon /></a>
+              +8801759231288
             </li>
           </ul>
         </div>
 
-        {/* Right Section */}
         <div className="space-y-6">
           <h3 className="footer-heading">Support & Downloads</h3>
           <p className="footer-p">
-            Quisque actraqum nunc no dolor sit amaugue dolor. Lorem ipsum smorom asdconsyect etur adipiscing elit.
+            For any support or inquiries, please contact us at support@webcoronet.com. You can also download our app from the App Store or Google Play.
           </p>
           <div className="flex gap-4">
-            <Link href="#">
+            <Link href="#" className="w-32 h-12">
               <Image
                 height={100}
                 width={100}
-                src="/app-store.png"
+                src="/app-store.jpg"
                 alt="App Store"
-                className="w-32"
+                className="w-full h-full"
               />
             </Link>
             <Link href="#">
@@ -81,7 +76,7 @@ const Footer = () => {
                 width={100}
                 src="/google-play.png"
                 alt="Google Play"
-                className="w-32"
+                className="w-full h-full"
               />
             </Link>
           </div>
@@ -90,7 +85,7 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className="mt-8 bg-black py-6 text-center text-sm">
-        © 2021 Qode Interactive, All Rights Reserved
+      Copyright: © 2024 Web Coronet. All rights reserved.
       </div>
     </footer>
   );

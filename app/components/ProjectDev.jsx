@@ -8,7 +8,7 @@ const ProjectDev = () => {
                     <div className='h-full flex flex-col items-start justify-start gap-6 w-full lg:w-[420px] '>
                         <h4>Project Development</h4>
                         <h1>Working Towards a better community.</h1>
-                        <p>Vel illum dolore eu feugiat nulla facilisis at vero praesent Ruril delenit augue duis in hendrerit in vulputatev.</p>
+                        <p>Working towards a better community by developing impactful projects.</p>
                     </div>
                 </div>
             </section>

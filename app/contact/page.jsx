@@ -3,7 +3,7 @@ import Heading from '../components/heading/heading';
 
 export const metadata = {
   title: "Contact Us - Get in Touch with Web Coronet",
-  description: "Contact Web Coronet for web development, design, and digital marketing services. Located in Sylhet, Bangladesh. Email: mail-info@webcoronet.com | Phone: +8801759231288",
+  description: "Contact Web Coronet for web development, design, and digital marketing services. Located in Sylhet, Bangladesh. Email: info@webcoronet.com | Phone: +880 1759-231288",
   keywords: [
     "contact webcoronet",
     "web development agency contact",
@@ -79,16 +79,20 @@ const Contact = () => {
                         <h2 className="text-3xl text-black mb-2 ">
                             Or just say hello:
                         </h2>
-                        <p className="text-gray-600">mail-info@webcoronet.com</p>
+                        <a href="mailto:info@webcoronet.com" className="text-gray-600 hover:text-black transition-colors">
+                            info@webcoronet.com
+                        </a>
                     </div>
                     <div>
                         <h2 className="text-lg text-black mb-2">
                             Our office in Bangladesh
                         </h2>
-                        <address className="text-gray-600 not-italic">
-                            Shahjalal Tower, Payra, Amborkhana, Sylhet</address>
-                        <p className="text-gray-600 mt-2">service@webcoronet.com</p>
-                        <p className="text-gray-600">+8801759231288</p>
+                        <address className="text-gray-600 not-italic mb-2">
+                            ABC Point, Uposohor, Sylhet
+                        </address>
+                        <a href="tel:+8801759231288" className="text-gray-600 hover:text-black transition-colors block">
+                            +880 1759-231288
+                        </a>
                     </div>
                 </div>
             </div>

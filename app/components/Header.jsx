@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import Nav from "./Nav";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
@@ -10,12 +11,16 @@ const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   // Handle scroll effect
   useEffect(() => {
+    setMounted(true);
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
+    // Set initial scroll state
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -39,17 +44,25 @@ const Header = () => {
       {/* Header */}
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled
+          mounted && isScrolled
             ? "bg-white bg-opacity-80 backdrop-blur-lg shadow-md"
             : "bg-transparent"
         }`}
       >
         <div className="container mx-auto flex justify-between items-center py-6 px-4 xl:py-8 xl:px-12">
           {/* Logo */}
-          <Link href="/">
-            <h1 className="text-2xl xl:text-4xl font-semibold">
-              <span className="text-white bg-black py-2 pl-6">Web </span>Coronet
-            </h1>
+          <Link href="/" className="flex items-center gap-4 group">
+            <Image 
+              src="/logo.png" 
+              alt="Web Coronet Logo" 
+              width={200} 
+              height={70}
+              className="h-14 xl:h-20 w-auto transition-transform duration-300 group-hover:scale-110"
+              priority
+            />
+            <span className="text-2xl xl:text-4xl font-bold uppercase tracking-wider bg-gradient-to-r from-black via-gray-800 to-black bg-clip-text text-transparent hover:from-gray-600 hover:via-black hover:to-gray-600 transition-all duration-300 drop-shadow-lg">
+              WEBCORONET
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -77,10 +90,17 @@ const Header = () => {
               }`}
             >
               <div className="flex justify-between items-center mb-6">
-                <Link href="/">
-                  <h1 className="text-xl font-semibold">
-                    <span className="text-black">Web </span>Coroner
-                  </h1>
+                <Link href="/" className="flex items-center gap-2 group">
+                  <Image 
+                    src="/logo.png" 
+                    alt="Web Coronet Logo" 
+                    width={150} 
+                    height={50}
+                    className="h-10 w-auto transition-transform duration-300 group-hover:scale-110"
+                  />
+                  <span className="text-xl font-bold uppercase tracking-wide bg-gradient-to-r from-black via-gray-800 to-black bg-clip-text text-transparent">
+                    WEBCORONET
+                  </span>
                 </Link>
                 <button onClick={closeMobileNav}>
                   <AiOutlineClose className="text-2xl" />

@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${heebo} ${litarata} antialiased relative  bg-[#F7F7F7]`}>
+        className={`${heebo.variable} ${litarata.variable} antialiased relative bg-[#F7F7F7]`}>
         <Header />
         <ThreeVerticalLines /> {/* Add the vertical lines component */}
         <div className="w-10/12 max-w-screen-2xl mx-auto">

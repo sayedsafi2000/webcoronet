@@ -26,7 +26,7 @@ const GetInTOuch = () => {
                             <AccordionItem value="item-1">
                                 <AccordionTrigger>Read More</AccordionTrigger>
                                 <AccordionContent>
-                                    Yes. It adheres to the WAI-ARIA design pattern.
+                                    Our product research process involves market analysis, competitor research, user interviews, and data-driven insights. We identify opportunities, validate concepts, and ensure your product aligns with market demands and user expectations before development begins.
                                 </AccordionContent>
                             </AccordionItem>
                         </Accordion>
@@ -39,13 +39,13 @@ const GetInTOuch = () => {
                     <div className='flex flex-col gap-3 text-start justify-between'>
                         <div className="flex flex-col">
                             <h3>Design & Development</h3>
-                            <p className=''>Our design and development team sworks collaboratively to create visually appealing and highly functional products.</p>
+                            <p className=''>Our design and development team works collaboratively to create visually appealing and highly functional products.</p>
                         </div>
                         <Accordion type="single" collapsible className="w-full">
-                            <AccordionItem value="item-1">
+                            <AccordionItem value="item-2">
                                 <AccordionTrigger>Read More</AccordionTrigger>
                                 <AccordionContent>
-                                    Yes. It adheres to the WAI-ARIA design pattern.
+                                    Our design and development team works collaboratively using modern frameworks and best practices. We create responsive, accessible, and performant solutions that not only look great but also deliver exceptional user experiences across all devices and platforms.
                                 </AccordionContent>
                             </AccordionItem>
                         </Accordion>

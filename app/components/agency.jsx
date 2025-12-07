@@ -8,7 +8,7 @@ const Agency = () => {
                     <div className='h-full flex flex-col items-start justify-start gap-6 w-full lg:w-[420px] '>
                         <h4>Website</h4>
                         <h1>Making your agency shine on every device</h1>
-                        <p>Vel illum dolore eu feugiat nulla facilisis at vero praesent Ruril delenit augue duis in hendrerit in vulputatev.</p>
+                        <p>We create responsive, mobile-first websites that ensure your agency looks professional and functions flawlessly across all devices. Our designs adapt seamlessly from desktop to tablet to mobile, providing an optimal experience for every visitor.</p>
                     </div>
                 </div>
             </section>

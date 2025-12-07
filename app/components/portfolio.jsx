@@ -10,7 +10,7 @@ const Portfolio = () => {
                 <div className='bg-mobile-app bg-no-repeat bg-cover bg-center bg-x-[50%] bg-y-[50%] bg-stretch flex flex-col items-start justify-between h-full w-full px-10 py-12 animation'>
                     <div className='pb-10'>
                         <p className='text-gray-300'>Website Development</p>
-                        <h3 className='text-white'>Make a staning dynamic website for your business.</h3>
+                        <h3 className='text-white'>Create a stunning dynamic website for your business.</h3>
                     </div>
                     <button className='text-black text-sm '>View Case Stady</button>
                 </div>

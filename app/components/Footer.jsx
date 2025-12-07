@@ -13,7 +13,16 @@ const Footer = () => {
         {/* Left Section */}
         <div className="space-y-6">
           <div>
-            <h1 className="text-3xl font-bold text-white"><span className="bg-white text-black pl-4 py-3">Web </span>Coronet</h1>
+            <Link href="/" className="gap-3">
+              <Image 
+                src="/logo.png" 
+                alt="Web Coronet Logo" 
+                width={180} 
+                height={60}
+                className="h-12 w-auto"
+              />
+              <h1 className='text-2xl font-bold uppercase tracking-wide text-white'>Web Coronet</h1>
+            </Link>
           </div>
           <div className="flex gap-4 text-xl">
             <Link href="#">

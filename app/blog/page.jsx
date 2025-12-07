@@ -1,6 +1,26 @@
 import React from 'react';
 import Heading from '../components/heading/heading';
 
+export const metadata = {
+  title: "Blog - Web Development Insights & Updates | Web Coronet",
+  description: "Stay updated with the latest insights, tips, and trends in web development, design, digital marketing, and technology from Web Coronet's blog.",
+  keywords: [
+    "web development blog",
+    "web design tips",
+    "digital marketing blog",
+    "technology insights",
+    "web development trends"
+  ],
+  openGraph: {
+    title: "Blog - Web Development Insights & Updates | Web Coronet",
+    description: "Stay updated with the latest insights, tips, and trends in web development, design, digital marketing, and technology.",
+    url: "https://www.webcoronet.com/blog",
+  },
+  alternates: {
+    canonical: "https://www.webcoronet.com/blog",
+  },
+};
+
 const page = () => {
     return (
         <div className='mt-28'>

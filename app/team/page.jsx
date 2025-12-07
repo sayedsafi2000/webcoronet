@@ -2,6 +2,26 @@ import React from 'react';
 import Heading from '../components/heading/heading';
 import Image from 'next/image';
 
+export const metadata = {
+  title: "Our Team - Meet the Experts | Web Coronet",
+  description: "Meet the talented team behind Web Coronet. Our experts in web development, design, and digital marketing are dedicated to your success.",
+  keywords: [
+    "webcoronet team",
+    "web developers",
+    "graphic designers",
+    "digital marketing experts",
+    "web development team Bangladesh"
+  ],
+  openGraph: {
+    title: "Our Team - Meet the Experts | Web Coronet",
+    description: "Meet the talented team behind Web Coronet. Our experts in web development, design, and digital marketing are dedicated to your success.",
+    url: "https://www.webcoronet.com/team",
+  },
+  alternates: {
+    canonical: "https://www.webcoronet.com/team",
+  },
+};
+
 const Team = () => {
     return (
         <div className='my-28'>
@@ -14,7 +34,7 @@ const Team = () => {
                     <a href='https://asadsnapper.com/' target='blank' className='px-12 py-3 bg-black text-white'>Read More</a>
                 </div>
                 <div className='animation'>
-                    <Image className='w-full lg:w-2/3 rounded-2xl mx-auto' src="/Asad-Jaman.jpg"  quality={100} width={1000} height={1000} alt='website' />
+                    <Image className='w-full lg:w-2/3 rounded-2xl mx-auto' src="/Asad-Jaman.jpg"  quality={100} width={1000} height={1000} alt='Asad Jaman - CEO & Founder of Web Coronet' />
                 </div>
             </div>
             <div className="flex flex-col lg:flex-row-reverse items-center justify-between gap-0 animation mt-20">
@@ -22,10 +42,10 @@ const Team = () => {
                     <h1>Sayed Safi</h1>
                     <p>Web Developer</p>
                     <p>I am a fullstack web developer with 13 years of experience in building and maintaining responsive websites. My expertise includes both frontend and backend development, ensuring seamless user experiences and robust functionality.</p>
-                    <a target='blank' href='https://sayed-safi.webcoronet.com/' className='px-12 py-3 bg-black text-white'>Read More</a>
+                    <a target='blank' href='https://sayedsafi.me/' className='px-12 py-3 bg-black text-white'>Read More</a>
                 </div>
                 <div className='animation '>
-                    <Image src="/sayed-safi-big.jpg" className='w-full lg:w-2/3 rounded-2xl mx-0' quality={100} width={1000} height={1000} alt='website' />
+                    <Image src="/sayed-safi-big.jpg" className='w-full lg:w-2/3 rounded-2xl mx-0' quality={100} width={1000} height={1000} alt='Sayed Safi - Fullstack Web Developer at Web Coronet' />
                 </div>
             </div>
             <div className="flex flex-col lg:flex-row items-center justify-between gap-0 animation mt-20">
@@ -36,7 +56,7 @@ const Team = () => {
                     <a href='https://dribbble.com/ImTitun' target='blank'  className='px-12 py-3 bg-black text-white'>Read More</a>
                 </div>
                 <div className='animation '>
-                    <Image src="/titon.jpg" className='w-full lg:w-2/3 rounded-2xl mx-0' quality={100} width={1000} height={1000} alt='website' />
+                    <Image src="/titon.jpg" className='w-full lg:w-2/3 rounded-2xl mx-0' quality={100} width={1000} height={1000} alt='Titun Chandra Dey - Lead Designer at Web Coronet' />
                 </div>
             </div>
             <div className="flex flex-col lg:flex-row-reverse items-center justify-between gap-0 animation mt-20">
@@ -47,7 +67,7 @@ const Team = () => {
                     <a href='https://web.facebook.com/mehjebin.fareea' target='blank'  className='px-12 py-3 bg-black text-white'>Read More</a>
                 </div>
                 <div className='animation '>
-                    <Image src="/marketer.jpg" className='w-full lg:w-2/3 rounded-2xl mx-0' quality={100} width={1000} height={1000} alt='website' />
+                    <Image src="/marketer.jpg" className='w-full lg:w-2/3 rounded-2xl mx-0' quality={100} width={1000} height={1000} alt='Fareea Mehjebin - Digital Marketing Strategist at Web Coronet' />
                 </div>
             </div>
         </div>

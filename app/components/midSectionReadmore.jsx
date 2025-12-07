@@ -11,7 +11,7 @@ const MidSectionReadmore = () => {
                     <button className='px-12 py-3 bg-black text-white'>Read More</button>
                 </div>
                 <div className='animation'>
-                    <Image src="/h-img-3.jpg" className='w-full' width={1000} height={1000} alt='website'/>
+                    <Image src="/h-img-3.jpg" className='w-full' width={1000} height={1000} alt='Business transformation through web development and digital strategy'/>
                 </div>
             </div>
         </div>

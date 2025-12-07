@@ -9,6 +9,30 @@ import {
     AccordionTrigger,
 } from "../components/ui/accordion"
 import GrateClient from '../components/grateClient';
+
+export const metadata = {
+  title: "Our Services - Web Development, Mobile Apps, Design & Marketing",
+  description: "Comprehensive digital services including web development, mobile app development, graphic design, and digital marketing. Custom solutions tailored to your business needs.",
+  keywords: [
+    "web development services",
+    "mobile app development",
+    "graphic design services",
+    "digital marketing services",
+    "SEO services",
+    "e-commerce development",
+    "responsive web design",
+    "UI/UX design"
+  ],
+  openGraph: {
+    title: "Our Services - Web Development, Mobile Apps, Design & Marketing",
+    description: "Comprehensive digital services including web development, mobile app development, graphic design, and digital marketing.",
+    url: "https://www.webcoronet.com/services",
+  },
+  alternates: {
+    canonical: "https://www.webcoronet.com/services",
+  },
+};
+
 const Services = () => {
     return (
         <div className='mt-28'>
@@ -21,7 +45,7 @@ const Services = () => {
                         <button className='px-12 py-3 bg-black text-white'>Read More</button>
                     </div>
                     <div className=''>
-                        <Image src="/h-img-3.jpg" className='w-full' width={1000} height={1000} alt='website' />
+                        <Image src="/h-img-3.jpg" className='w-full' width={1000} height={1000} alt='Web development and digital services illustration' />
                     </div>
                 </div>
             </div>
@@ -63,7 +87,7 @@ const Services = () => {
                         </Accordion>
                     </div>
                     <div className=' w-full lg:w-1/2'>
-                        <Image src="/p4-img-1.jpg" className='w-full' width={1000} height={1000} alt='website' />
+                        <Image src="/p4-img-1.jpg" className='w-full' width={1000} height={1000} alt='Professional web development and design services' />
                     </div>
                 </div>
             </div>

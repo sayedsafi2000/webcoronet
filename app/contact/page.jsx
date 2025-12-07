@@ -1,6 +1,25 @@
 import React from 'react';
 import Heading from '../components/heading/heading';
 
+export const metadata = {
+  title: "Contact Us - Get in Touch with Web Coronet",
+  description: "Contact Web Coronet for web development, design, and digital marketing services. Located in Sylhet, Bangladesh. Email: mail-info@webcoronet.com | Phone: +8801759231288",
+  keywords: [
+    "contact webcoronet",
+    "web development agency contact",
+    "Sylhet web agency",
+    "Bangladesh web development contact"
+  ],
+  openGraph: {
+    title: "Contact Us - Get in Touch with Web Coronet",
+    description: "Contact Web Coronet for web development, design, and digital marketing services. Located in Sylhet, Bangladesh.",
+    url: "https://www.webcoronet.com/contact",
+  },
+  alternates: {
+    canonical: "https://www.webcoronet.com/contact",
+  },
+};
+
 const Contact = () => {
     return (
         <div className="flex flex-col items-center justify-center mt-16">

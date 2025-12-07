@@ -18,6 +18,27 @@ import {
     TooltipTrigger,
 } from "../components/ui/tooltip"
 import Image from 'next/image';
+
+export const metadata = {
+  title: "Our Work - Portfolio & Projects | Web Coronet",
+  description: "Explore Web Coronet's portfolio of successful web development projects, mobile apps, and digital marketing campaigns. See how we've helped businesses grow online.",
+  keywords: [
+    "webcoronet portfolio",
+    "web development portfolio",
+    "mobile app portfolio",
+    "website projects",
+    "e-commerce projects"
+  ],
+  openGraph: {
+    title: "Our Work - Portfolio & Projects | Web Coronet",
+    description: "Explore Web Coronet's portfolio of successful web development projects, mobile apps, and digital marketing campaigns.",
+    url: "https://www.webcoronet.com/works",
+  },
+  alternates: {
+    canonical: "https://www.webcoronet.com/works",
+  },
+};
+
 const Works = () => {
     return (
         <div className='mt-28'>
@@ -70,7 +91,7 @@ const Works = () => {
                                         <CardContent className="flex items-center justify-center p-0">
 
                                             <div>
-                                                <Image width={1000} height={1000} src="/website (5).png" alt='web development' />
+                                                <Image width={1000} height={1000} src="/website (5).png" alt='Web Coronet web development project portfolio' />
                                             </div>
                                         </CardContent>
                                     </Card>
@@ -82,7 +103,7 @@ const Works = () => {
                                         <CardContent className="flex items-center justify-center p-0">
 
                                             <div>
-                                                <Image width={1000} height={1000} src="/website (6).png" alt='web development' />
+                                                <Image width={1000} height={1000} src="/website (6).png" alt='Web Coronet web development project portfolio' />
                                             </div>
                                         </CardContent>
                                     </Card>
@@ -94,7 +115,7 @@ const Works = () => {
                                         <CardContent className="flex items-center justify-center p-0">
 
                                             <div>
-                                                <Image width={1000} height={1000} src="/website (4).png" alt='web development' />
+                                                <Image width={1000} height={1000} src="/website (4).png" alt='Web Coronet web development project portfolio' />
                                             </div>
                                         </CardContent>
                                     </Card>
@@ -106,7 +127,7 @@ const Works = () => {
                                         <CardContent className="flex items-center justify-center p-0">
 
                                             <div>
-                                                <Image width={1000} height={1000} src="/website (3).png" alt='web development' />
+                                                <Image width={1000} height={1000} src="/website (3).png" alt='Web Coronet web development project portfolio' />
                                             </div>
                                         </CardContent>
                                     </Card>
@@ -118,7 +139,7 @@ const Works = () => {
                                         <CardContent className="flex items-center justify-center p-0">
 
                                             <div>
-                                                <Image width={1000} height={1000} src="/website (2).png" alt='web development' />
+                                                <Image width={1000} height={1000} src="/website (2).png" alt='Web Coronet web development project portfolio' />
                                             </div>
                                         </CardContent>
                                     </Card>

@@ -48,6 +48,7 @@ const Header = () => {
             ? "bg-white bg-opacity-80 backdrop-blur-lg shadow-md"
             : "bg-transparent"
         }`}
+        suppressHydrationWarning
       >
         <div className="w-full max-w-screen-2xl mx-auto flex justify-between items-center py-4 px-6 md:px-8 lg:px-12 xl:px-16">
           {/* Logo */}

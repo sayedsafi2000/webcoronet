@@ -16,13 +16,13 @@ const Service = () => {
                     <div className='-rotate-45'>
                         <PiPen className='text-4xl font-[100] border-0 text-gray-500' />
                     </div>
-                    <div className='flex flex-col gap-3 text-start '>
-                        <h3 className='text-md lg:text-xl'>Mobile App</h3>
-                        <p className=''>- Custom Mobile App Design
+                    <div className='flex flex-col gap-2 md:gap-3 text-start '>
+                        <h3 className='text-sm sm:text-base md:text-lg lg:text-xl'>Mobile App</h3>
+                        <p className='text-xs sm:text-sm md:text-base'>- Custom Mobile App Design
                         </p>
-                        <p className=''>- Smooth UI/UX Experience
+                        <p className='text-xs sm:text-sm md:text-base'>- Smooth UI/UX Experience
                         </p>
-                        <p className=''> - Cross-Platform Development
+                        <p className='text-xs sm:text-sm md:text-base'> - Cross-Platform Development
                         </p>
                         <Accordion type="single" collapsible className="w-full">
                             <AccordionItem value="item-1">
@@ -38,12 +38,12 @@ const Service = () => {
                     <div className=''>
                         <PiMonitor className='text-4xl font-[100] border-0 text-gray-500' />
                     </div>
-                    <div className='flex flex-col gap-3 text-start '>
-                        <h3 className='text-md lg:text-xl'>Web Development
+                    <div className='flex flex-col gap-2 md:gap-3 text-start '>
+                        <h3 className='text-sm sm:text-base md:text-lg lg:text-xl'>Web Development
                         </h3>
-                        <p className=''> - Front-End Development</p>
-                        <p className=''> - Back-End Development</p>
-                        <p className=''> - E-commerce Solutions</p>
+                        <p className='text-xs sm:text-sm md:text-base'> - Front-End Development</p>
+                        <p className='text-xs sm:text-sm md:text-base'> - Back-End Development</p>
+                        <p className='text-xs sm:text-sm md:text-base'> - E-commerce Solutions</p>
                         <Accordion type="single" collapsible className="w-full">
                             <AccordionItem value="item-1">
                                 <AccordionTrigger>Read More</AccordionTrigger>
@@ -58,12 +58,12 @@ const Service = () => {
                     <div className=''>
                         <GoFileDirectory className='text-4xl font-[100] border-0 text-gray-500' />
                     </div>
-                    <div className='flex flex-col gap-3 text-start '>
-                        <h3 className='text-md lg:text-xl'>Graphic Design</h3>
-                        <p className=''>- Logo and Branding Design</p>
-                        <p className=''>- Marketing Collateral Design</p>
-                        <p className=''>- Social Media Graphics</p>
-                        <p className=''>- Print Design</p>
+                    <div className='flex flex-col gap-2 md:gap-3 text-start '>
+                        <h3 className='text-sm sm:text-base md:text-lg lg:text-xl'>Graphic Design</h3>
+                        <p className='text-xs sm:text-sm md:text-base'>- Logo and Branding Design</p>
+                        <p className='text-xs sm:text-sm md:text-base'>- Marketing Collateral Design</p>
+                        <p className='text-xs sm:text-sm md:text-base'>- Social Media Graphics</p>
+                        <p className='text-xs sm:text-sm md:text-base'>- Print Design</p>
                         <Accordion type="single" collapsible className="w-full">
                             <AccordionItem value="item-1">
                                 <AccordionTrigger>Read More</AccordionTrigger>
@@ -78,13 +78,13 @@ const Service = () => {
                     <div className=''>
                         <GoBookmark className='text-4xl font-[100] border-0 text-gray-500' />
                     </div>
-                    <div className='flex flex-col gap-3 text-start '>
-                        <h3 className='text-md lg:text-xl'>Digital Marketing</h3>
-                        <p className=''>- SEO</p>
-                        <p className=''>- PPC Advertising</p>
-                        <p className=''>- Social Media Marketing</p>
-                        <p className=''>- Content Marketing</p>
-                        <p className=''>- Email Marketing</p>
+                    <div className='flex flex-col gap-2 md:gap-3 text-start '>
+                        <h3 className='text-sm sm:text-base md:text-lg lg:text-xl'>Digital Marketing</h3>
+                        <p className='text-xs sm:text-sm md:text-base'>- SEO</p>
+                        <p className='text-xs sm:text-sm md:text-base'>- PPC Advertising</p>
+                        <p className='text-xs sm:text-sm md:text-base'>- Social Media Marketing</p>
+                        <p className='text-xs sm:text-sm md:text-base'>- Content Marketing</p>
+                        <p className='text-xs sm:text-sm md:text-base'>- Email Marketing</p>
                         <Accordion type="single" collapsible className="w-full">
                             <AccordionItem value="item-1">
                                 <AccordionTrigger>Read More</AccordionTrigger>

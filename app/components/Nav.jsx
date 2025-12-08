@@ -32,7 +32,6 @@ const links = [
 
 const Nav = () => {
     const pathname = usePathname();
-    console.log(pathname)
     return (
         <nav className='bg-white lg:bg-transparent  flex flex-col xl:flex-row gap-8 pl-10 pb-6'>
            {

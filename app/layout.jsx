@@ -29,22 +29,34 @@ export const metadata = {
     default: "Web Coronet - Web Development, Design & Digital Marketing Agency",
     template: "%s | Web Coronet"
   },
-  description: "Web Coronet is a leading web development, design, and digital marketing agency. We offer custom mobile apps, web development, graphic design, and digital marketing services to help your business grow online.",
+  description: "Web Coronet is a leading web development, design, and digital marketing agency in Sylhet, Bangladesh. We offer custom mobile apps, web development, graphic design, SEO, and digital marketing services to help your business grow online. Contact us at ABC Point, Uposohor, Sylhet.",
   keywords: [
     "web development",
     "web design",
     "mobile app development",
     "graphic design",
     "digital marketing",
-    "SEO",
+    "SEO services",
     "web agency",
     "Bangladesh web development",
     "Sylhet web agency",
+    "Sylhet web development company",
     "e-commerce development",
     "responsive web design",
     "UI/UX design",
     "PPC advertising",
-    "social media marketing"
+    "social media marketing",
+    "website development Bangladesh",
+    "web design Sylhet",
+    "mobile app development Bangladesh",
+    "SEO company Sylhet",
+    "digital marketing agency Bangladesh",
+    "web development services",
+    "custom website development",
+    "WordPress development",
+    "WooCommerce development",
+    "content marketing",
+    "email marketing"
   ],
   authors: [{ name: "Web Coronet" }],
   creator: "Web Coronet",
@@ -109,58 +121,167 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const jsonLd = {
+  const organizationSchema = {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "LocalBusiness",
+    "@id": "https://www.webcoronet.com/#organization",
     "name": "Web Coronet",
+    "alternateName": "Webcoronet",
     "url": "https://www.webcoronet.com",
-    "logo": "https://www.webcoronet.com/logo.png",
-    "description": "Leading web development, design, and digital marketing agency",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.webcoronet.com/logo.png",
+      "width": 1200,
+      "height": 630
+    },
+    "image": "https://www.webcoronet.com/logo.png",
+    "description": "Leading web development, design, and digital marketing agency in Sylhet, Bangladesh. We provide custom mobile apps, web development, graphic design, SEO, and digital marketing services.",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Shahjalal Tower, Payra, Amborkhana",
+      "streetAddress": "ABC Point, Uposohor",
       "addressLocality": "Sylhet",
-      "addressCountry": "Bangladesh"
+      "addressRegion": "Sylhet Division",
+      "addressCountry": "BD",
+      "postalCode": "3100"
     },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+8801759231288",
-      "contactType": "Customer Service",
-      "email": "mail-info@webcoronet.com"
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "24.8949",
+      "longitude": "91.8687"
     },
-    "sameAs": [
-      "https://www.facebook.com/webcoronet",
-      "https://www.twitter.com/webcoronet",
-      "https://www.dribbble.com/webcoronet",
-      "https://www.youtube.com/webcoronet"
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+8801759231288",
+        "contactType": "Customer Service",
+        "email": "info@webcoronet.com",
+        "areaServed": "BD",
+        "availableLanguage": ["en", "bn"]
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+8801759231288",
+        "contactType": "Sales",
+        "email": "info@webcoronet.com"
+      }
     ],
-    "areaServed": "Worldwide",
-    "serviceType": [
-      "Web Development",
-      "Mobile App Development",
-      "Graphic Design",
-      "Digital Marketing",
-      "SEO Services"
-    ]
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61582159036502",
+      "https://www.youtube.com/@AsadSnapper"
+    ],
+    "areaServed": {
+      "@type": "Country",
+      "name": "Bangladesh"
+    },
+    "priceRange": "$$",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Web Development Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Web Development",
+            "description": "Custom web development services"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Mobile App Development",
+            "description": "iOS and Android app development"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Graphic Design",
+            "description": "Professional graphic design services"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Digital Marketing",
+            "description": "SEO, PPC, and social media marketing"
+          }
+        }
+      ]
+    }
+  };
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://www.webcoronet.com/#website",
+    "url": "https://www.webcoronet.com",
+    "name": "Web Coronet",
+    "description": "Web Development, Design & Digital Marketing Agency",
+    "publisher": {
+      "@id": "https://www.webcoronet.com/#organization"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://www.webcoronet.com/search?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
   };
 
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/logo.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/logo.png" />
+        <link rel="icon" href="/logo.png" type="image/png" sizes="32x32" />
+        <link rel="icon" href="/logo.png" type="image/png" sizes="16x16" />
+        <link rel="apple-touch-icon" href="/logo.png" sizes="180x180" />
+        <link rel="shortcut icon" href="/logo.png" type="image/png" />
+        <link rel="canonical" href="https://www.webcoronet.com" />
+        <meta name="geo.region" content="BD-SY" />
+        <meta name="geo.placename" content="Sylhet" />
+        <meta name="geo.position" content="24.8949;91.8687" />
+        <meta name="ICBM" content="24.8949, 91.8687" />
+        <meta name="language" content="English" />
+        <meta name="revisit-after" content="7 days" />
+        <meta name="distribution" content="global" />
+        <meta name="rating" content="general" />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
       <body
         className={`${heebo.variable} ${litarata.variable} antialiased relative bg-[#F7F7F7]`}>
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-black focus:text-white">
+          Skip to main content
+        </a>
         <Header />
-        <ThreeVerticalLines /> {/* Add the vertical lines component */}
-        <div className="w-10/12 max-w-screen-2xl mx-auto">
+        <ThreeVerticalLines />
+        <main id="main-content" className="w-10/12 max-w-screen-2xl mx-auto">
           {children}
-        </div>
+        </main>
         <Footer/>
       </body>
     </html>

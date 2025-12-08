@@ -34,15 +34,73 @@ export const metadata = {
 };
 
 const Services = () => {
-    return (
-        <div className='mt-28'>
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Web Development Services",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Web Coronet",
+      "url": "https://www.webcoronet.com"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Bangladesh"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Digital Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Web Development",
+            "description": "Custom web development using latest technologies"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Mobile App Development",
+            "description": "iOS and Android mobile app development"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Graphic Design",
+            "description": "Professional graphic design and branding services"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Digital Marketing",
+            "description": "SEO, PPC, social media and content marketing"
+          }
+        }
+      ]
+    }
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <section itemScope itemType="https://schema.org/Service" className='mt-16 md:mt-24 lg:mt-28'>
             <Heading subTitle="Our Services" title="What We Do & How We Do It" />
-            <div className='my-28'>
-                <div className="flex flex-col-reverse lg:flex-row-reverse items-center justify-between gap-7 ">
-                    <div className='flex flex-col items-start justify-start w-full lg:w-2/3 gap-6'>
-                        <h1>Comprehensive Digital Services</h1>
-                        <p>Tailored Solutions to Meet Your Unique Needs</p>
-                        <button className='px-12 py-3 bg-black text-white'>Read More</button>
+            <div className='my-16 md:my-24 lg:my-28'>
+                <div className="flex flex-col-reverse lg:flex-row-reverse items-center justify-between gap-5 md:gap-6 lg:gap-7">
+                    <div className='flex flex-col items-start justify-start w-full lg:w-2/3 gap-4 md:gap-5 lg:gap-6'>
+                        <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl'>Comprehensive Digital Services</h1>
+                        <p className='text-sm sm:text-base md:text-lg'>Tailored Solutions to Meet Your Unique Needs</p>
+                        <button className='px-6 py-2 md:px-10 md:py-2.5 lg:px-12 lg:py-3 bg-black text-white text-sm md:text-base hover:bg-gray-800 transition-colors'>Read More</button>
                     </div>
                     <div className=''>
                         <Image src="/h-img-3.jpg" className='w-full' width={1000} height={1000} alt='Web development and digital services illustration' />
@@ -92,7 +150,8 @@ const Services = () => {
                 </div>
             </div>
             <GrateClient/>
-        </div>
+        </section>
+      </>
     );
 };
 

@@ -108,7 +108,7 @@ const Team = () => {
                 <div className='flex flex-col items-start justify-start w-full lg:w-2/3 gap-4 md:gap-5 lg:gap-6 mx-auto'>
                     <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl'>Titun Chandra Dey</h1>
                     <p className='text-base sm:text-lg md:text-xl'>Lead Designer</p>
-                    <p className='text-sm sm:text-base md:text-lg'>Titun's creativity and eye for design ensure that every project is visually stunning and user-friendly.</p>
+                    <p className='text-sm sm:text-base md:text-lg'>Titun&apos;s creativity and eye for design ensure that every project is visually stunning and user-friendly.</p>
                     <a href='https://dribbble.com/ImTitun' target='blank'  className='px-6 py-2 md:px-10 md:py-2.5 lg:px-12 lg:py-3 bg-black text-white text-sm md:text-base hover:bg-gray-800 transition-colors'>Read More</a>
                 </div>
                 <div className='animation w-full lg:w-1/3'>
@@ -119,7 +119,7 @@ const Team = () => {
                 <div className='flex flex-col items-start justify-start w-full lg:w-2/3 gap-4 md:gap-5 lg:gap-6 mx-auto'>
                     <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl'>Fareea Mehjebin</h1>
                     <p className='text-base sm:text-lg md:text-xl'>Digital Marketing Strategist</p>
-                    <p className='text-sm sm:text-base md:text-lg'>Fareea's strategic approach to digital marketing helps our clients achieve their online goals.</p>
+                    <p className='text-sm sm:text-base md:text-lg'>Fareea&apos;s strategic approach to digital marketing helps our clients achieve their online goals.</p>
                     <a href='https://web.facebook.com/mehjebin.fareea' target='blank'  className='px-6 py-2 md:px-10 md:py-2.5 lg:px-12 lg:py-3 bg-black text-white text-sm md:text-base hover:bg-gray-800 transition-colors'>Read More</a>
                 </div>
                 <div className='animation w-full lg:w-1/3'>

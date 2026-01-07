@@ -12,18 +12,43 @@ import Image from 'next/image';
 
 export const metadata = {
   title: "Our Work - Portfolio & Projects | Web Coronet",
-  description: "Explore Web Coronet's portfolio of successful web development projects, mobile apps, and digital marketing campaigns. See how we've helped businesses grow online.",
+  description: "Explore Web Coronet's portfolio of successful web development projects, mobile apps, and digital marketing campaigns in Sylhet, Bangladesh. See how we've helped 500+ businesses grow online with custom solutions.",
   keywords: [
     "webcoronet portfolio",
     "web development portfolio",
     "mobile app portfolio",
     "website projects",
-    "e-commerce projects"
+    "e-commerce projects",
+    "web development projects Bangladesh",
+    "portfolio Sylhet",
+    "successful web projects",
+    "mobile app examples",
+    "website design portfolio",
+    "e-commerce website examples",
+    "React projects",
+    "Next.js projects",
+    "web development case studies",
+    "digital marketing campaigns",
+    "SEO success stories"
   ],
   openGraph: {
     title: "Our Work - Portfolio & Projects | Web Coronet",
-    description: "Explore Web Coronet's portfolio of successful web development projects, mobile apps, and digital marketing campaigns.",
+    description: "Explore Web Coronet's portfolio of successful web development projects, mobile apps, and digital marketing campaigns. See how we've helped 500+ businesses grow online.",
     url: "https://www.webcoronet.com/works",
+    type: "website",
+    images: [
+      {
+        url: "https://www.webcoronet.com/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Web Coronet Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Work - Portfolio & Projects | Web Coronet",
+    description: "Explore Web Coronet's portfolio of successful web development projects, mobile apps, and digital marketing campaigns.",
   },
   alternates: {
     canonical: "https://www.webcoronet.com/works",

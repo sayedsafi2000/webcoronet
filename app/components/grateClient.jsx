@@ -98,7 +98,7 @@ const GrateClient = () => {
                   <div className="w-20 h-20 md:w-24 md:h-24 flex items-center justify-center mb-3 relative overflow-hidden rounded-full bg-white mx-auto">
                     <Image
                       src={client.image}
-                      alt={client.name}
+                      alt={`${client.name} - ${client.industry} client of Web Coronet web development agency`}
                       width={120}
                       height={120}
                       className="w-full h-full object-cover rounded-full group-hover:scale-110 transition-transform duration-300"

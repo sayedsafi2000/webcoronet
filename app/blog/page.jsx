@@ -3,18 +3,42 @@ import Heading from '../components/heading/heading';
 
 export const metadata = {
   title: "Blog - Web Development Insights & Updates | Web Coronet",
-  description: "Stay updated with the latest insights, tips, and trends in web development, design, digital marketing, and technology from Web Coronet's blog.",
+  description: "Stay updated with the latest insights, tips, and trends in web development, design, digital marketing, and technology from Web Coronet's blog. Expert articles on React, Next.js, SEO, and more.",
   keywords: [
     "web development blog",
     "web design tips",
     "digital marketing blog",
     "technology insights",
-    "web development trends"
+    "web development trends",
+    "React tutorials",
+    "Next.js guides",
+    "SEO tips",
+    "web development tutorials",
+    "digital marketing strategies",
+    "web design trends",
+    "programming blog",
+    "web development articles",
+    "tech blog Bangladesh",
+    "web development news"
   ],
   openGraph: {
     title: "Blog - Web Development Insights & Updates | Web Coronet",
     description: "Stay updated with the latest insights, tips, and trends in web development, design, digital marketing, and technology.",
     url: "https://www.webcoronet.com/blog",
+    type: "website",
+    images: [
+      {
+        url: "https://www.webcoronet.com/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Web Coronet Blog",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog - Web Development Insights & Updates | Web Coronet",
+    description: "Stay updated with the latest insights, tips, and trends in web development, design, digital marketing, and technology.",
   },
   alternates: {
     canonical: "https://www.webcoronet.com/blog",

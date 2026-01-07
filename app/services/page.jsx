@@ -11,8 +11,8 @@ import {
 import GrateClient from '../components/grateClient';
 
 export const metadata = {
-  title: "Our Services - Web Development, Mobile Apps, Design & Marketing",
-  description: "Comprehensive digital services including web development, mobile app development, graphic design, and digital marketing. Custom solutions tailored to your business needs.",
+  title: "Our Services - Web Development, Mobile Apps, Design & Marketing | Web Coronet",
+  description: "Comprehensive digital services in Sylhet, Bangladesh. Web development, mobile app development, graphic design, SEO, and digital marketing. Custom solutions tailored to your business needs. Contact us at ABC Point, Uposohor, Sylhet.",
   keywords: [
     "web development services",
     "mobile app development",
@@ -21,12 +21,46 @@ export const metadata = {
     "SEO services",
     "e-commerce development",
     "responsive web design",
-    "UI/UX design"
+    "UI/UX design",
+    "web development Sylhet",
+    "mobile app development Bangladesh",
+    "graphic design Sylhet",
+    "SEO company Sylhet",
+    "digital marketing agency Bangladesh",
+    "custom website development",
+    "WordPress development",
+    "React development",
+    "Next.js development",
+    "Node.js development",
+    "fullstack development",
+    "website redesign",
+    "landing page design",
+    "brand identity design",
+    "logo design services",
+    "PPC advertising",
+    "social media marketing",
+    "content marketing",
+    "email marketing",
+    "local SEO services"
   ],
   openGraph: {
-    title: "Our Services - Web Development, Mobile Apps, Design & Marketing",
-    description: "Comprehensive digital services including web development, mobile app development, graphic design, and digital marketing.",
+    title: "Our Services - Web Development, Mobile Apps, Design & Marketing | Web Coronet",
+    description: "Comprehensive digital services in Sylhet, Bangladesh. Web development, mobile app development, graphic design, SEO, and digital marketing. Custom solutions tailored to your business needs.",
     url: "https://www.webcoronet.com/services",
+    type: "website",
+    images: [
+      {
+        url: "https://www.webcoronet.com/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Web Coronet Services",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Services - Web Development, Mobile Apps, Design & Marketing",
+    description: "Comprehensive digital services in Sylhet, Bangladesh. Web development, mobile app development, graphic design, SEO, and digital marketing.",
   },
   alternates: {
     canonical: "https://www.webcoronet.com/services",
@@ -38,10 +72,20 @@ const Services = () => {
     "@context": "https://schema.org",
     "@type": "Service",
     "serviceType": "Web Development Services",
+    "name": "Web Development, Mobile Apps, Design & Digital Marketing Services",
+    "description": "Comprehensive digital services including web development, mobile app development, graphic design, SEO, and digital marketing in Sylhet, Bangladesh.",
     "provider": {
       "@type": "LocalBusiness",
+      "@id": "https://www.webcoronet.com/#organization",
       "name": "Web Coronet",
-      "url": "https://www.webcoronet.com"
+      "url": "https://www.webcoronet.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ABC Point, Uposohor",
+        "addressLocality": "Sylhet",
+        "addressRegion": "Sylhet Division",
+        "addressCountry": "BD"
+      }
     },
     "areaServed": {
       "@type": "Country",
@@ -56,7 +100,7 @@ const Services = () => {
           "itemOffered": {
             "@type": "Service",
             "name": "Web Development",
-            "description": "Custom web development using latest technologies"
+            "description": "Custom web development using React, Next.js, Node.js and latest technologies. Responsive, fast, and SEO-optimized websites."
           }
         },
         {
@@ -64,7 +108,7 @@ const Services = () => {
           "itemOffered": {
             "@type": "Service",
             "name": "Mobile App Development",
-            "description": "iOS and Android mobile app development"
+            "description": "iOS and Android mobile app development. Native and cross-platform solutions with React Native."
           }
         },
         {
@@ -72,7 +116,7 @@ const Services = () => {
           "itemOffered": {
             "@type": "Service",
             "name": "Graphic Design",
-            "description": "Professional graphic design and branding services"
+            "description": "Professional graphic design and branding services. Logo design, brand identity, marketing collateral."
           }
         },
         {
@@ -80,7 +124,7 @@ const Services = () => {
           "itemOffered": {
             "@type": "Service",
             "name": "Digital Marketing",
-            "description": "SEO, PPC, social media and content marketing"
+            "description": "SEO, PPC advertising, social media marketing, content marketing, and email marketing services."
           }
         }
       ]

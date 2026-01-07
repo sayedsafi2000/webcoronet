@@ -2,18 +2,42 @@ import React from 'react';
 import Heading from '../components/heading/heading';
 
 export const metadata = {
-  title: "Contact Us - Get in Touch with Web Coronet",
-  description: "Contact Web Coronet for web development, design, and digital marketing services. Located in Sylhet, Bangladesh. Email: info@webcoronet.com | Phone: +880 1759-231288",
+  title: "Contact Us - Get in Touch with Web Coronet | Sylhet, Bangladesh",
+  description: "Contact Web Coronet for web development, design, and digital marketing services. Located at ABC Point, Uposohor, Sylhet, Bangladesh. Email: info@webcoronet.com | Phone: +880 1759-231288 | WhatsApp: +880 1759-231288",
   keywords: [
     "contact webcoronet",
     "web development agency contact",
     "Sylhet web agency",
-    "Bangladesh web development contact"
+    "Bangladesh web development contact",
+    "contact web developer",
+    "web agency Sylhet contact",
+    "web development company contact",
+    "get quote web development",
+    "web design consultation",
+    "digital marketing consultation",
+    "Sylhet web services",
+    "Bangladesh web agency",
+    "contact Sayed Safi",
+    "web development inquiry"
   ],
   openGraph: {
+    title: "Contact Us - Get in Touch with Web Coronet | Sylhet, Bangladesh",
+    description: "Contact Web Coronet for web development, design, and digital marketing services. Located at ABC Point, Uposohor, Sylhet, Bangladesh. Email: info@webcoronet.com | Phone: +880 1759-231288",
+    url: "https://www.webcoronet.com/contact",
+    type: "website",
+    images: [
+      {
+        url: "https://www.webcoronet.com/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Contact Web Coronet",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "Contact Us - Get in Touch with Web Coronet",
     description: "Contact Web Coronet for web development, design, and digital marketing services. Located in Sylhet, Bangladesh.",
-    url: "https://www.webcoronet.com/contact",
   },
   alternates: {
     canonical: "https://www.webcoronet.com/contact",

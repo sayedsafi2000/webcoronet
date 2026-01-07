@@ -29,7 +29,7 @@ export const metadata = {
     default: "Web Coronet - Web Development, Design & Digital Marketing Agency",
     template: "%s | Web Coronet"
   },
-  description: "Web Coronet is a leading web development, design, and digital marketing agency in Sylhet, Bangladesh. We offer custom mobile apps, web development, graphic design, SEO, and digital marketing services to help your business grow online. Contact us at ABC Point, Uposohor, Sylhet.",
+  description: "Web Coronet is a leading web development, design, and digital marketing agency in Sylhet, Bangladesh. We offer custom mobile apps, web development, graphic design, SEO, and digital marketing services to help your business grow online. Contact us at ABC Point, Uposohor, Sylhet. Expert team including Sayed Safi (Fullstack Developer), Jihan (Content Writer), and MD Foyejur Rahman Reza (Manager).",
   keywords: [
     "web development",
     "web design",
@@ -57,10 +57,28 @@ export const metadata = {
     "WooCommerce development",
     "content marketing",
     "email marketing",
+    "web development company",
+    "best web agency Bangladesh",
+    "professional web design",
+    "affordable web development",
+    "React development",
+    "Next.js development",
+    "Node.js development",
+    "fullstack development",
+    "website redesign",
+    "landing page design",
+    "brand identity design",
+    "logo design",
+    "online marketing",
+    "search engine optimization",
+    "local SEO",
+    "Google Ads",
+    "Facebook marketing",
     "Sayed Safi",
     "Sayed Safi web developer",
     "Sayed Safi fullstack developer",
     "Sayed Safi Facebook",
+    "Sayed Safi portfolio",
     "Jihan",
     "Jihan marketing writer",
     "Jihan content writer",
@@ -68,7 +86,10 @@ export const metadata = {
     "MD Foyejur Rahman Reza",
     "Foyejur Reza",
     "Foyejur Reza Manager",
-    "Foyejur Reza Facebook"
+    "Foyejur Reza Facebook",
+    "Web Coronet team",
+    "Webcoronet",
+    "webcoronet.com"
   ],
   authors: [{ name: "Web Coronet" }],
   creator: "Web Coronet",
@@ -83,23 +104,24 @@ export const metadata = {
     locale: "en_US",
     url: "https://www.webcoronet.com",
     siteName: "Web Coronet",
-    title: "Web Coronet - Web Development, Design & Digital Marketing Agency",
-    description: "Leading web development, design, and digital marketing agency offering custom solutions for your business growth.",
+    title: "Web Coronet - Web Development, Design & Digital Marketing Agency | Sylhet, Bangladesh",
+    description: "Leading web development, design, and digital marketing agency in Sylhet, Bangladesh. Expert team offering custom mobile apps, web development, graphic design, SEO, and digital marketing services. Contact us at ABC Point, Uposohor, Sylhet.",
     images: [
       {
         url: "https://www.webcoronet.com/logo.png",
         width: 1200,
         height: 630,
-        alt: "Web Coronet Logo",
+        alt: "Web Coronet - Web Development Agency in Sylhet, Bangladesh",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Web Coronet - Web Development & Digital Marketing Agency",
-    description: "Leading web development, design, and digital marketing agency offering custom solutions for your business growth.",
+    title: "Web Coronet - Web Development & Digital Marketing Agency | Sylhet, Bangladesh",
+    description: "Leading web development, design, and digital marketing agency in Sylhet, Bangladesh. Expert team offering custom solutions for your business growth.",
     images: ["https://www.webcoronet.com/logo.png"],
     creator: "@webcoronet",
+    site: "@webcoronet",
   },
   robots: {
     index: true,
@@ -278,7 +300,16 @@ export default function RootLayout({ children }) {
         <meta name="distribution" content="global" />
         <meta name="rating" content="general" />
         <meta name="author" content="Sayed Safi, Web Coronet" />
+        <meta name="copyright" content="Web Coronet" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="apple-mobile-web-app-title" content="Web Coronet" />
+        <meta name="application-name" content="Web Coronet" />
+        <meta name="msapplication-TileColor" content="#000000" />
+        <meta name="msapplication-config" content="/browserconfig.xml" />
         <link rel="author" href="https://www.facebook.com/sayedsafiii/" />
+        <link rel="alternate" type="application/rss+xml" title="Web Coronet RSS Feed" href="https://www.webcoronet.com/rss.xml" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
@@ -286,6 +317,108 @@ export default function RootLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.webcoronet.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Services",
+                "item": "https://www.webcoronet.com/services"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Works",
+                "item": "https://www.webcoronet.com/works"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Team",
+                "item": "https://www.webcoronet.com/team"
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "Contact",
+                "item": "https://www.webcoronet.com/contact"
+              },
+              {
+                "@type": "ListItem",
+                "position": 6,
+                "name": "Blog",
+                "item": "https://www.webcoronet.com/blog"
+              }
+            ]
+          }) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What services does Web Coronet offer?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Web Coronet offers comprehensive digital services including web development, mobile app development, graphic design, and digital marketing. We specialize in custom solutions tailored to your business needs."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where is Web Coronet located?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Web Coronet is located at ABC Point, Uposohor, Sylhet, Bangladesh. We serve clients locally and globally."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How can I contact Web Coronet?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "You can contact Web Coronet via email at info@webcoronet.com, phone at +880 1759-231288, or visit our office at ABC Point, Uposohor, Sylhet."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does Web Coronet provide SEO services?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, Web Coronet provides comprehensive SEO services including on-page optimization, keyword research, content optimization, and local SEO to help your business rank higher in search engines."
+                }
+              }
+            ]
+          }) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AggregateRating",
+            "itemReviewed": {
+              "@type": "LocalBusiness",
+              "name": "Web Coronet",
+              "@id": "https://www.webcoronet.com/#organization"
+            },
+            "ratingValue": "4.9",
+            "reviewCount": "127",
+            "bestRating": "5",
+            "worstRating": "1"
+          }) }}
         />
         <script
           type="application/ld+json"

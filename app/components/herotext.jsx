@@ -44,7 +44,7 @@ const Herotext = () => {
                         <div className='relative rounded-lg overflow-hidden shadow-2xl'>
                             <Image 
                                 src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80" 
-                                alt="Web development and digital solutions" 
+                                alt="Web Coronet - Professional web development and digital marketing services in Sylhet, Bangladesh" 
                                 width={1200}
                                 height={500}
                                 className='w-full h-[300px] md:h-[400px] lg:h-[500px] object-cover'

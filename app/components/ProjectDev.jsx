@@ -34,7 +34,7 @@ const ProjectDev = () => {
                     <div className='flex-1 w-full lg:w-auto h-[300px] md:h-[400px] lg:h-[500px] relative overflow-hidden'>
                         <Image 
                             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80" 
-                            alt="Community impact and digital solutions"
+                            alt="Web Coronet community impact - Building digital solutions that make a difference in Sylhet, Bangladesh"
                             fill
                             className='object-cover'
                         />

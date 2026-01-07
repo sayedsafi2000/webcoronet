@@ -4,30 +4,52 @@ import Image from 'next/image';
 
 export const metadata = {
   title: "Our Team - Meet the Experts | Web Coronet",
-  description: "Meet the talented team behind Web Coronet. Our experts in web development, design, and digital marketing are dedicated to your success.",
+  description: "Meet the talented team behind Web Coronet in Sylhet, Bangladesh. Our experts including Sayed Safi (Fullstack Developer), Jihan (Content Writer), MD Foyejur Rahman Reza (Manager), and more. Dedicated to your success in web development, design, and digital marketing.",
   keywords: [
     "webcoronet team",
     "web developers",
     "graphic designers",
     "digital marketing experts",
     "web development team Bangladesh",
+    "Sylhet web developers",
     "Sayed Safi",
     "Sayed Safi web developer",
     "Sayed Safi Facebook",
     "Sayed Safi fullstack developer",
+    "Sayed Safi portfolio",
+    "Sayed Safi React developer",
+    "Sayed Safi Next.js developer",
     "Jihan",
     "Jihan marketing writer",
     "Jihan content writer",
     "Jihan Facebook",
+    "Jihan content marketing",
     "MD Foyejur Rahman Reza",
     "Foyejur Reza",
     "Foyejur Reza Manager",
-    "Foyejur Reza Facebook"
+    "Foyejur Reza Facebook",
+    "Web Coronet team members",
+    "web development experts",
+    "professional web developers"
   ],
   openGraph: {
     title: "Our Team - Meet the Experts | Web Coronet",
     description: "Meet the talented team behind Web Coronet. Our experts in web development, design, and digital marketing are dedicated to your success.",
     url: "https://www.webcoronet.com/team",
+    type: "website",
+    images: [
+      {
+        url: "https://www.webcoronet.com/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Web Coronet Team",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Team - Meet the Experts | Web Coronet",
+    description: "Meet the talented team behind Web Coronet. Our experts in web development, design, and digital marketing are dedicated to your success.",
   },
   alternates: {
     canonical: "https://www.webcoronet.com/team",
@@ -175,8 +197,8 @@ const Team = () => {
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         <div className="absolute top-4 left-4 z-10">
                             <span className='px-3 py-1.5 bg-black text-white text-xs font-semibold shadow-lg'>Manager</span>
-                        </div>
-                    </div>
+                </div>
+            </div>
                     <div className="p-6 md:p-8">
                         <div className='mb-3'>
                             <h2 className='text-xl sm:text-2xl md:text-3xl font-semibold'>MD Foyejur Rahman Reza</h2>

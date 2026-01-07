@@ -13,17 +13,14 @@ const Footer = () => {
         {/* Left Section */}
         <div className="space-y-4 md:space-y-6">
           <div>
-            <Link href="/" className="flex items-center gap-1.5 md:gap-2 group">
+            <Link href="/" className="flex items-center group">
               <Image 
                 src="/logo.png" 
                 alt="Web Coronet Logo" 
                 width={160} 
                 height={55}
-                className="h-8 md:h-10 w-auto transition-transform duration-300 group-hover:scale-105"
+                className="h-10 md:h-12 lg:h-14 w-auto transition-transform duration-300 group-hover:scale-105"
               />
-              <span className='text-base md:text-lg lg:text-xl font-bold uppercase tracking-wide text-white'>
-                WEBCORONET
-              </span>
             </Link>
           </div>
           <div className="flex gap-3 md:gap-4 text-lg md:text-xl">

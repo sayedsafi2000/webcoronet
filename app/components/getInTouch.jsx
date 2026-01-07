@@ -1,5 +1,5 @@
 import React from 'react';
-import { PiPen, PiMonitor } from "react-icons/pi";
+import { PiPen, PiMonitor, PiRocketLaunch } from "react-icons/pi";
 import { GoFileDirectory } from "react-icons/go";
 import {
     Accordion,
@@ -7,49 +7,83 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "./ui/accordion"
+import Heading from './heading/heading';
 
 const GetInTOuch = () => {
     return (
-        <div className='my-16 md:my-24 lg:my-28'>
-            <h2 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl'>Get In Touch</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-11 mt-6 md:mt-8 min-h-[250px] md:h-[300px] items-center">
-                <div className='flex gap-3 md:gap-4 p-6 md:p-8 lg:p-10 items-start bg-white h-full animation'>
-                    <div className='-rotate-45 flex-shrink-0'>
-                        <PiPen className='text-2xl sm:text-3xl md:text-4xl font-[100] border-0 text-gray-500' />
-                    </div>
-                    <div className='flex flex-col gap-2 md:gap-3 text-start justify-between '>
-                        <div className="flex flex-col">
-                            <h3 className='text-base sm:text-lg md:text-xl lg:text-2xl'>Product research</h3>
-                            <p className='text-xs sm:text-sm md:text-base'>We conduct thorough product research to ensure that your product meets market needs and stands out from the competition.</p>
+        <div className='my-12 md:my-16 lg:my-20 px-4 md:px-6 lg:px-8'>
+            <Heading 
+                subTitle="How We Work" 
+                title="Our Process" 
+            />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 mt-6 md:mt-8 lg:mt-12">
+                <div className='flex flex-col gap-4 p-6 md:p-8 lg:p-10 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow animation h-full'>
+                    <div className='flex items-center gap-4'>
+                        <div className='p-3 bg-blue-100 rounded-lg'>
+                            <PiPen className='text-2xl sm:text-3xl md:text-4xl text-blue-600' />
                         </div>
-                        <Accordion type="single" collapsible className="w-full">
-                            <AccordionItem value="item-1">
-                                <AccordionTrigger>Read More</AccordionTrigger>
-                                <AccordionContent>
-                                    Our product research process involves market analysis, competitor research, user interviews, and data-driven insights. We identify opportunities, validate concepts, and ensure your product aligns with market demands and user expectations before development begins.
-                                </AccordionContent>
-                            </AccordionItem>
-                        </Accordion>
+                        <div className="flex flex-col">
+                            <span className='text-xs text-gray-500 uppercase tracking-wide'>Step 01</span>
+                            <h3 className='text-base sm:text-lg md:text-xl lg:text-2xl font-semibold'>Discovery & Research</h3>
+                        </div>
                     </div>
+                    <p className='text-xs sm:text-sm md:text-base text-gray-600 leading-relaxed'>
+                        We begin by understanding your business goals, target audience, and market landscape. Through comprehensive research and stakeholder interviews, we identify opportunities and define the project scope.
+                    </p>
+                    <Accordion type="single" collapsible className="w-full mt-auto">
+                        <AccordionItem value="item-1">
+                            <AccordionTrigger className="text-xs sm:text-sm">Learn More</AccordionTrigger>
+                            <AccordionContent className="text-xs sm:text-sm text-gray-600">
+                                Our discovery phase includes competitive analysis, user persona development, technical feasibility studies, and requirement gathering. We create detailed project documentation and establish clear success metrics.
+                            </AccordionContent>
+                        </AccordionItem>
+                    </Accordion>
                 </div>
-                <div className='flex gap-3 md:gap-4 p-6 md:p-8 lg:p-10 items-start bg-white h-full animation'>
-                    <div className='flex-shrink-0'>
-                        <PiMonitor className='text-2xl sm:text-3xl md:text-4xl font-[100] border-0 text-gray-500' />
-                    </div>
-                    <div className='flex flex-col gap-2 md:gap-3 text-start justify-between'>
-                        <div className="flex flex-col">
-                            <h3 className='text-base sm:text-lg md:text-xl lg:text-2xl'>Design & Development</h3>
-                            <p className='text-xs sm:text-sm md:text-base'>Our design and development team works collaboratively to create visually appealing and highly functional products.</p>
+
+                <div className='flex flex-col gap-4 p-6 md:p-8 lg:p-10 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow animation h-full'>
+                    <div className='flex items-center gap-4'>
+                        <div className='p-3 bg-purple-100 rounded-lg'>
+                            <PiMonitor className='text-2xl sm:text-3xl md:text-4xl text-purple-600' />
                         </div>
-                        <Accordion type="single" collapsible className="w-full">
-                            <AccordionItem value="item-2">
-                                <AccordionTrigger>Read More</AccordionTrigger>
-                                <AccordionContent>
-                                    Our design and development team works collaboratively using modern frameworks and best practices. We create responsive, accessible, and performant solutions that not only look great but also deliver exceptional user experiences across all devices and platforms.
-                                </AccordionContent>
-                            </AccordionItem>
-                        </Accordion>
+                        <div className="flex flex-col">
+                            <span className='text-xs text-gray-500 uppercase tracking-wide'>Step 02</span>
+                            <h3 className='text-base sm:text-lg md:text-xl lg:text-2xl font-semibold'>Design & Development</h3>
+                        </div>
                     </div>
+                    <p className='text-xs sm:text-sm md:text-base text-gray-600 leading-relaxed'>
+                        Our team creates stunning designs and builds robust solutions using the latest technologies. We follow agile methodologies, ensuring regular updates and incorporating feedback throughout the development process.
+                    </p>
+                    <Accordion type="single" collapsible className="w-full mt-auto">
+                        <AccordionItem value="item-2">
+                            <AccordionTrigger className="text-xs sm:text-sm">Learn More</AccordionTrigger>
+                            <AccordionContent className="text-xs sm:text-sm text-gray-600">
+                                We use modern frameworks like React, Next.js, and Node.js for development. Our design process includes wireframing, prototyping, user testing, and iterative refinement to ensure optimal user experience.
+                            </AccordionContent>
+                        </AccordionItem>
+                    </Accordion>
+                </div>
+
+                <div className='flex flex-col gap-4 p-6 md:p-8 lg:p-10 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow animation h-full'>
+                    <div className='flex items-center gap-4'>
+                        <div className='p-3 bg-green-100 rounded-lg'>
+                            <PiRocketLaunch className='text-2xl sm:text-3xl md:text-4xl text-green-600' />
+                        </div>
+                        <div className="flex flex-col">
+                            <span className='text-xs text-gray-500 uppercase tracking-wide'>Step 03</span>
+                            <h3 className='text-base sm:text-lg md:text-xl lg:text-2xl font-semibold'>Launch & Support</h3>
+                        </div>
+                    </div>
+                    <p className='text-xs sm:text-sm md:text-base text-gray-600 leading-relaxed'>
+                        We handle seamless deployment and provide ongoing support to ensure your solution continues to perform optimally. Our team offers maintenance, updates, and optimization services to keep your digital presence thriving.
+                    </p>
+                    <Accordion type="single" collapsible className="w-full mt-auto">
+                        <AccordionItem value="item-3">
+                            <AccordionTrigger className="text-xs sm:text-sm">Learn More</AccordionTrigger>
+                            <AccordionContent className="text-xs sm:text-sm text-gray-600">
+                                Post-launch support includes performance monitoring, security updates, content management training, SEO optimization, and regular backups. We're committed to your long-term success.
+                            </AccordionContent>
+                        </AccordionItem>
+                    </Accordion>
                 </div>
             </div>
         </div>

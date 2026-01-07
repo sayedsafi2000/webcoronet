@@ -9,9 +9,9 @@ import {
 } from "./ui/accordion"
 const Service = () => {
     return (
-        <div className='mt-28'>
+        <div className='mt-12 md:mt-16 lg:mt-20 px-4 md:px-6 lg:px-8'>
             <h2>Our services</h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6 mt-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5 lg:gap-6 mt-6 md:mt-8">
                 <div className='flex gap-2 lg:gap-4 p-2 lg:p-4 items-start animation'>
                     <div className='-rotate-45'>
                         <PiPen className='text-4xl font-[100] border-0 text-gray-500' />
@@ -28,7 +28,8 @@ const Service = () => {
                             <AccordionItem value="item-1">
                                 <AccordionTrigger>Read More</AccordionTrigger>
                                 <AccordionContent>
-                                    Our agency specializes in creating visually appealing and user-centric website designs. We focus on delivering intuitive, responsive, and engaging layouts that reflect your brand identity and enhance user experience.
+                                    <p className='text-xs sm:text-sm md:text-base mb-2'>Transform your business idea into a powerful mobile application that engages users and drives growth. Our mobile app development services cover both iOS and Android platforms, ensuring your app reaches the widest possible audience.</p>
+                                    <p className='text-xs sm:text-sm md:text-base'>We specialize in creating native and cross-platform mobile applications with intuitive user interfaces, smooth performance, and robust backend integration. Our apps are designed to provide exceptional user experiences while meeting your business objectives.</p>
                                 </AccordionContent>
                             </AccordionItem>
                         </Accordion>
@@ -48,7 +49,8 @@ const Service = () => {
                             <AccordionItem value="item-1">
                                 <AccordionTrigger>Read More</AccordionTrigger>
                                 <AccordionContent>
-                                We build powerful and scalable websites using the latest technologies. From dynamic e-commerce platforms to custom web applications, our development team ensures seamless performance, security, and functionality.
+                                    <p className='text-xs sm:text-sm md:text-base mb-2'>Create a powerful online presence with our comprehensive web development services. We build responsive, fast, and secure websites using modern technologies like React, Next.js, and Node.js.</p>
+                                    <p className='text-xs sm:text-sm md:text-base'>From simple business websites to complex e-commerce platforms and custom web applications, our development team ensures seamless performance, security, and functionality. Every website we build is optimized for search engines and designed to convert visitors into customers.</p>
                                 </AccordionContent>
                             </AccordionItem>
                         </Accordion>
@@ -68,7 +70,8 @@ const Service = () => {
                             <AccordionItem value="item-1">
                                 <AccordionTrigger>Read More</AccordionTrigger>
                                 <AccordionContent>
-                                Our creative team designs compelling visuals that make your brand stand out. From logos and branding to social media graphics and marketing materials, we bring your vision to life with professional and eye-catching designs.
+                                    <p className='text-xs sm:text-sm md:text-base mb-2'>Elevate your brand identity with stunning visual designs that capture attention and communicate your message effectively. Our graphic design team combines creativity with strategic thinking to create visuals that resonate with your target audience.</p>
+                                    <p className='text-xs sm:text-sm md:text-base'>We offer comprehensive design services including logo creation, brand identity development, marketing collateral, social media graphics, and print design. Every design we create is crafted to reflect your brand's personality and values while maintaining professional standards.</p>
                                 </AccordionContent>
                             </AccordionItem>
                         </Accordion>
@@ -89,7 +92,8 @@ const Service = () => {
                             <AccordionItem value="item-1">
                                 <AccordionTrigger>Read More</AccordionTrigger>
                                 <AccordionContent>
-                                We drive business growth through data-driven digital marketing strategies. Our services include SEO, social media marketing, PPC advertising, and content marketing to boost your online presence and maximize conversions.
+                                    <p className='text-xs sm:text-sm md:text-base mb-2'>Grow your online presence and reach your target audience with our comprehensive digital marketing services. We use data-driven strategies and proven techniques to increase your visibility, drive traffic, and convert visitors into customers.</p>
+                                    <p className='text-xs sm:text-sm md:text-base'>Our digital marketing services include search engine optimization (SEO), pay-per-click (PPC) advertising, social media marketing, content marketing, email campaigns, and analytics tracking. We continuously monitor and optimize campaigns to ensure maximum ROI and sustainable growth for your business.</p>
                                 </AccordionContent>
                             </AccordionItem>
                         </Accordion>

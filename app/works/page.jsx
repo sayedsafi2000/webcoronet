@@ -41,110 +41,136 @@ export const metadata = {
 
 const Works = () => {
     return (
-        <div className='mt-28'>
+        <div className='mt-12 md:mt-16 lg:mt-20 px-4 md:px-6 lg:px-8'>
             <Heading subTitle="Showcasing Our Creativity and Expertise" title="Our Work" />
-            <div className="mt-28 container mx-auto">
+            <div className="mt-12 md:mt-16 lg:mt-20 max-w-7xl mx-auto">
                 <Service />
                 <div className="mt-16">
                     <Heading subTitle="Our Expertise and Commitment to Your Success Sets Us Apart" title="Why Webcoronet ?" />
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                    <div className="w-full flex flex-col gap-3 md:gap-4 lg:gap-5 p-4 md:p-6 lg:p-12 shadow-lg text-center items-center animation">
-                        <div className="">
-                            <BsPersonWorkspace className="text-3xl sm:text-4xl text-gray-500" />
+                    <div className="w-full flex flex-col gap-4 md:gap-5 p-6 md:p-8 lg:p-10 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow animation border border-gray-100">
+                        <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <BsPersonWorkspace className="text-3xl sm:text-4xl text-blue-600" />
                         </div>
-                        <h3 className='text-lg sm:text-xl md:text-2xl'>Personalized Business <br /> Package</h3>
-                        <p className='text-xs sm:text-sm md:text-base'>Choose from a wide range of web solutions that you need to ensure effective, efficient, and sustainable growth of your business. Webcoronet works on the smallest to largest detail of your website---from mobile and speed optimization, to landing page designs, and even SEO---basically, everything under the digital sun!</p>
+                        <h3 className='text-lg sm:text-xl md:text-2xl font-semibold mb-3'>Personalized Business Solutions</h3>
+                        <p className='text-xs sm:text-sm md:text-base text-gray-600 leading-relaxed'>
+                            We understand that every business is unique. That's why we offer customized web solutions tailored to your specific needs. From mobile optimization and speed enhancement to landing page design and SEO, we handle every aspect of your digital presence to ensure effective, efficient, and sustainable business growth.
+                        </p>
+                        <ul className='text-xs sm:text-sm text-gray-600 mt-4 space-y-2 text-left'>
+                            <li className='flex items-start gap-2'>
+                                <span className='text-blue-600 mt-1'>✓</span>
+                                <span>Custom website development</span>
+                            </li>
+                            <li className='flex items-start gap-2'>
+                                <span className='text-blue-600 mt-1'>✓</span>
+                                <span>Mobile & speed optimization</span>
+                            </li>
+                            <li className='flex items-start gap-2'>
+                                <span className='text-blue-600 mt-1'>✓</span>
+                                <span>SEO & content strategy</span>
+                            </li>
+                        </ul>
                     </div>
-                    <div className="w-full flex flex-col gap-3 md:gap-4 lg:gap-5 p-4 md:p-6 lg:p-12 shadow-lg text-center items-center animation">
-                        <div className="">
-                            <BsPersonWorkspace className="text-3xl sm:text-4xl text-gray-500" />
+                    <div className="w-full flex flex-col gap-4 md:gap-5 p-6 md:p-8 lg:p-10 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow animation border border-gray-100">
+                        <div className="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <BsPersonWorkspace className="text-3xl sm:text-4xl text-green-600" />
                         </div>
-                        <h3 className='text-lg sm:text-xl md:text-2xl'>Results-Driven <br /> Solutions</h3>
-                        <p className='text-xs sm:text-sm md:text-base'>At Webcoronet, we are committed to delivering measurable results for our clients. We leverage the latest technologies and marketing tools to create data-driven campaigns that are optimized for performance and ROI. Our team is constantly monitoring and analyzing campaign performance, making adjustments as needed.</p>
+                        <h3 className='text-lg sm:text-xl md:text-2xl font-semibold mb-3'>Results-Driven Approach</h3>
+                        <p className='text-xs sm:text-sm md:text-base text-gray-600 leading-relaxed'>
+                            At Web Coronet, we're committed to delivering measurable results for our clients. We leverage the latest technologies and marketing tools to create data-driven campaigns optimized for performance and ROI. Our team continuously monitors and analyzes campaign performance, making real-time adjustments to maximize your success.
+                        </p>
+                        <ul className='text-xs sm:text-sm text-gray-600 mt-4 space-y-2 text-left'>
+                            <li className='flex items-start gap-2'>
+                                <span className='text-green-600 mt-1'>✓</span>
+                                <span>Data-driven strategies</span>
+                            </li>
+                            <li className='flex items-start gap-2'>
+                                <span className='text-green-600 mt-1'>✓</span>
+                                <span>Performance tracking & analytics</span>
+                            </li>
+                            <li className='flex items-start gap-2'>
+                                <span className='text-green-600 mt-1'>✓</span>
+                                <span>Continuous optimization</span>
+                            </li>
+                        </ul>
                     </div>
-                    <div className="w-full flex flex-col gap-3 md:gap-4 lg:gap-5 p-4 md:p-6 lg:p-12 shadow-lg text-center items-center animation">
-                        <div className="">
-                            <BsPersonWorkspace className="text-3xl sm:text-4xl text-gray-500" />
+                    <div className="w-full flex flex-col gap-4 md:gap-5 p-6 md:p-8 lg:p-10 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow animation border border-gray-100">
+                        <div className="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <BsPersonWorkspace className="text-3xl sm:text-4xl text-purple-600" />
                         </div>
-                        <h3 className='text-lg sm:text-xl md:text-2xl'>Customized <br /> Approach</h3>
-                        <p className='text-xs sm:text-sm md:text-base'>Clients from around the globe have raved and benefited from our responsive WordPress and WooCommerce websites. These SMEs are able to stand-up and even surpass bigger and heavier competition at a lower cost here at Webcoronet---all because our services are tailored and uniquely-made for you and your specific vision for your company.</p>
+                        <h3 className='text-lg sm:text-xl md:text-2xl font-semibold mb-3'>Customized Solutions</h3>
+                        <p className='text-xs sm:text-sm md:text-base text-gray-600 leading-relaxed'>
+                            Clients from around the globe have benefited from our responsive WordPress and WooCommerce websites. Small and medium enterprises can compete with larger companies at a fraction of the cost, thanks to our tailored services designed specifically for your business vision and goals.
+                        </p>
+                        <ul className='text-xs sm:text-sm text-gray-600 mt-4 space-y-2 text-left'>
+                            <li className='flex items-start gap-2'>
+                                <span className='text-purple-600 mt-1'>✓</span>
+                                <span>WordPress & WooCommerce</span>
+                            </li>
+                            <li className='flex items-start gap-2'>
+                                <span className='text-purple-600 mt-1'>✓</span>
+                                <span>Custom e-commerce solutions</span>
+                            </li>
+                            <li className='flex items-start gap-2'>
+                                <span className='text-purple-600 mt-1'>✓</span>
+                                <span>Scalable & cost-effective</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div className="mt-12 md:mt-14 lg:mt-16 text-pretty lg:text-center">
-                    <h2 className='mb-3 md:mb-4 text-xl sm:text-2xl md:text-3xl lg:text-4xl'>Our Website and Development Projects</h2>
-                    <p className='w-full lg:w-2/3 mx-auto text-sm sm:text-base md:text-lg px-4 md:px-0'>At Webcoronet, we are proud of the websites and development projects we have created for our clients. From e-commerce sites to custom CMS builds, our team has the expertise and creativity to develop unique solutions that meet our clients needs. Browse through our portfolio to see examples of our work and learn more about how we can help your business succeed online.
-
-                        Ready to take your website to the next level? Contact us today to schedule a consultation with one of our experts and learn how we can help you achieve your online goals.</p>
+                <div className="mt-12 md:mt-16 lg:mt-20 text-pretty lg:text-center">
+                    <h2 className='mb-4 md:mb-6 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl'>Our Website and Development Projects</h2>
+                    <p className='w-full lg:w-2/3 mx-auto text-xs sm:text-sm md:text-base lg:text-lg mb-4 md:mb-6'>
+                        At Web Coronet, we take pride in delivering exceptional digital solutions that drive real business results. Our portfolio showcases a diverse range of projects, from sleek corporate websites to complex e-commerce platforms and innovative mobile applications. Each project is crafted with attention to detail, user experience, and performance optimization.
+                    </p>
+                    <p className='w-full lg:w-2/3 mx-auto text-xs sm:text-sm md:text-base lg:text-lg mb-4 md:mb-6'>
+                        Our development process combines cutting-edge technology with strategic thinking, ensuring that every solution not only looks great but also performs flawlessly. We work closely with our clients to understand their unique challenges and goals, resulting in custom solutions that exceed expectations.
+                    </p>
+                    <p className='w-full lg:w-2/3 mx-auto text-xs sm:text-sm md:text-base lg:text-lg'>
+                        Ready to take your digital presence to the next level? Contact us today to schedule a consultation with one of our experts and discover how we can help transform your business online.
+                    </p>
                 </div>
-                <div className='mt-16'>
+                <div className='mt-12 md:mt-16 lg:mt-20'>
                     <Carousel
                         opts={{
                             align: "start",
+                            loop: true,
                         }}
                         className="w-full"
                     >
                         <CarouselContent>
-                            <CarouselItem className="md:basis-1/2 lg:basis-1/3 w-full">
-                                <div className="p-1">
-                                    <Card>
-                                        <CardContent className="flex items-center justify-center p-0">
-
-                                            <div>
-                                                <Image width={1000} height={1000} src="/website (5).png" alt='Web Coronet web development project portfolio' />
-                                            </div>
-                                        </CardContent>
-                                    </Card>
-                                </div>
-                            </CarouselItem>
-                            <CarouselItem className="md:basis-1/2 lg:basis-1/3 w-full">
-                                <div className="p-1">
-                                    <Card>
-                                        <CardContent className="flex items-center justify-center p-0">
-
-                                            <div>
-                                                <Image width={1000} height={1000} src="/website (6).png" alt='Web Coronet web development project portfolio' />
-                                            </div>
-                                        </CardContent>
-                                    </Card>
-                                </div>
-                            </CarouselItem>
-                            <CarouselItem className="md:basis-1/2 lg:basis-1/3 w-full">
-                                <div className="p-1">
-                                    <Card>
-                                        <CardContent className="flex items-center justify-center p-0">
-
-                                            <div>
-                                                <Image width={1000} height={1000} src="/website (4).png" alt='Web Coronet web development project portfolio' />
-                                            </div>
-                                        </CardContent>
-                                    </Card>
-                                </div>
-                            </CarouselItem>
-                            <CarouselItem className="md:basis-1/2 lg:basis-1/3 w-full">
-                                <div className="p-1">
-                                    <Card>
-                                        <CardContent className="flex items-center justify-center p-0">
-
-                                            <div>
-                                                <Image width={1000} height={1000} src="/website (3).png" alt='Web Coronet web development project portfolio' />
-                                            </div>
-                                        </CardContent>
-                                    </Card>
-                                </div>
-                            </CarouselItem>
-                            <CarouselItem className="md:basis-1/2 lg:basis-1/3 w-full">
-                                <div className="p-1">
-                                    <Card>
-                                        <CardContent className="flex items-center justify-center p-0">
-
-                                            <div>
-                                                <Image width={1000} height={1000} src="/website (2).png" alt='Web Coronet web development project portfolio' />
-                                            </div>
-                                        </CardContent>
-                                    </Card>
-                                </div>
-                            </CarouselItem>
+                            {[
+                                { src: "/website (5).png", title: "E-Commerce Platform", category: "Web Development" },
+                                { src: "/website (6).png", title: "Corporate Website", category: "Web Design" },
+                                { src: "/website (4).png", title: "Business Portal", category: "Web Application" },
+                                { src: "/website (3).png", title: "Portfolio Website", category: "Creative Design" },
+                                { src: "/website (2).png", title: "SaaS Platform", category: "Web Application" },
+                            ].map((project, index) => (
+                                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 w-full">
+                                    <div className="p-2">
+                                        <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                                            <CardContent className="p-0 relative group">
+                                                <div className="relative overflow-hidden">
+                                                    <Image 
+                                                        width={1000} 
+                                                        height={1000} 
+                                                        src={project.src} 
+                                                        alt={project.title}
+                                                        className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+                                                    />
+                                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                                        <div className="text-white">
+                                                            <p className="text-xs uppercase tracking-wide mb-1">{project.category}</p>
+                                                            <h4 className="text-sm font-semibold">{project.title}</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </CardContent>
+                                        </Card>
+                                    </div>
+                                </CarouselItem>
+                            ))}
                         </CarouselContent>
                         <CarouselPrevious />
                         <CarouselNext />

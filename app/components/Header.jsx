@@ -40,6 +40,40 @@ const Header = () => {
     setIsMobileNavOpen(false);
   };
 
+  // Prevent body scroll when mobile nav is open
+  useEffect(() => {
+    if (isMobileNavOpen) {
+      // Save current scroll position
+      const scrollY = window.scrollY;
+      // Lock body scroll
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${scrollY}px`;
+      document.body.style.width = '100%';
+      document.body.style.overflow = 'hidden';
+      // Also lock html scroll
+      document.documentElement.style.overflow = 'hidden';
+    } else {
+      // Restore scroll position
+      const scrollY = document.body.style.top;
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.width = '';
+      document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
+      if (scrollY) {
+        window.scrollTo(0, parseInt(scrollY || '0') * -1);
+      }
+    }
+    return () => {
+      // Cleanup
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.width = '';
+      document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
+    };
+  }, [isMobileNavOpen]);
+
   return (
     <>
       {/* Header */}
@@ -91,52 +125,62 @@ const Header = () => {
               <RxHamburgerMenu className="text-white text-xl" />
             </button>
 
+            {/* Background overlay - must be before the menu for proper layering */}
+            {isMobileNavOpen && (
+              <div
+                className="fixed top-0 left-0 right-0 bottom-0 w-screen h-screen bg-black bg-opacity-50 z-[60] transition-opacity duration-300"
+                onClick={closeMobileNav}
+                style={{ touchAction: 'none' }}
+              ></div>
+            )}
+
             {/* Mobile nav menu */}
             <div
-              className={`fixed top-0 right-0 w-3/5 h-full shadow-2xl flex flex-col bg-white transform transition-transform duration-300 z-50 ${
+              className={`fixed top-0 right-0 w-[85%] sm:w-3/5 md:w-2/5 h-screen shadow-2xl flex flex-col bg-white transform transition-transform duration-300 ease-in-out z-[70] overflow-hidden ${
                 isMobileNavOpen ? "translate-x-0" : "translate-x-full"
               }`}
+              style={{ touchAction: 'pan-y' }}
             >
-              <div className="flex justify-between items-center p-6 border-b border-gray-200">
+              <div className="flex justify-between items-center p-4 sm:p-6 border-b border-gray-200 flex-shrink-0">
                 <Link href="/" className="flex items-center gap-1.5 group" onClick={closeMobileNav}>
                   <Image 
                     src="/logo.png" 
                     alt="Web Coronet Logo" 
                     width={100} 
                     height={35}
-                    className="h-7 w-auto"
+                    className="h-6 sm:h-7 w-auto"
                   />
-                  <span className="text-base font-bold uppercase tracking-wide bg-gradient-to-r from-black via-gray-800 to-black bg-clip-text text-transparent">
+                  <span className="text-sm sm:text-base font-bold uppercase tracking-wide bg-gradient-to-r from-black via-gray-800 to-black bg-clip-text text-transparent">
                     WEBCORONET
                   </span>
                 </Link>
                 <button 
                   onClick={closeMobileNav}
-                  className="p-2 hover:bg-gray-100 rounded-md transition-colors"
+                  className="p-2 hover:bg-gray-100 rounded-md transition-colors flex-shrink-0"
                   aria-label="Close menu"
                 >
-                  <AiOutlineClose className="text-2xl text-gray-700" />
+                  <AiOutlineClose className="text-xl sm:text-2xl text-gray-700" />
                 </button>
               </div>
-              <div className="flex-grow overflow-y-auto p-6">
+              <div className="flex-grow overflow-y-auto p-4 sm:p-6">
                 <Nav />
               </div>
             </div>
-
-            {/* Background overlay */}
-            {isMobileNavOpen && (
-              <div
-                className="fixed inset-0 bg-black bg-opacity-50 z-40"
-                onClick={closeMobileNav}
-              ></div>
-            )}
           </div>
         </div>
       </header>
 
+      {/* Background overlay for Drawer - must be before drawer for proper layering */}
+      {isDrawerOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 z-[60] transition-opacity duration-300"
+          onClick={toggleDrawer}
+        ></div>
+      )}
+
       {/* Desktop Drawer */}
         <div
-          className={`fixed top-0 right-0 bg-black w-3/12 h-full shadow-2xl flex flex-col transform transition-transform duration-500 ease-in-out z-50 ${
+          className={`fixed top-0 right-0 bg-black w-3/12 h-full shadow-2xl flex flex-col transform transition-transform duration-500 ease-in-out z-[70] ${
             isDrawerOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
@@ -209,14 +253,6 @@ const Header = () => {
             </div>
           </div>
         </div>
-
-        {/* Background overlay for Drawer */}
-      {isDrawerOpen && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-50 z-40"
-          onClick={toggleDrawer}
-        ></div>
-      )}
     </>
   );
 };

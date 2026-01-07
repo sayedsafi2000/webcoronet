@@ -98,23 +98,63 @@ const Contact = () => {
                 {/* Right Section */}
                 <div className="space-y-6 md:space-y-8 w-full lg:w-[480px] mt-8 lg:mt-0">
                     <div>
-                        <h2 className="text-xl sm:text-2xl md:text-3xl text-black mb-2">
-                            Or just say hello:
+                        <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-black mb-4">
+                            Get in Touch
                         </h2>
-                        <a href="mailto:info@webcoronet.com" className="text-gray-600 hover:text-black transition-colors text-sm sm:text-base break-all">
-                            info@webcoronet.com
-                        </a>
+                        <p className="text-xs sm:text-sm md:text-base text-gray-600 mb-4">
+                            We're here to help bring your digital vision to life. Whether you have a question about our services, need a quote, or want to discuss your project, our team is ready to assist you.
+                        </p>
                     </div>
                     <div>
-                        <h2 className="text-base sm:text-lg text-black mb-2">
-                            Our office in Bangladesh
+                        <h2 className="text-base sm:text-lg md:text-xl text-black mb-3">
+                            Email Us
                         </h2>
-                        <address className="text-gray-600 not-italic mb-2 text-sm sm:text-base">
-                            ABC Point, Uposohor, Sylhet
-                        </address>
-                        <a href="tel:+8801759231288" className="text-gray-600 hover:text-black transition-colors block text-sm sm:text-base">
+                        <a href="mailto:info@webcoronet.com" className="text-gray-600 hover:text-black transition-colors text-sm sm:text-base break-all block mb-2">
+                            info@webcoronet.com
+                        </a>
+                        <p className="text-xs sm:text-sm text-gray-500">
+                            We typically respond within 24 hours
+                        </p>
+                    </div>
+                    <div>
+                        <h2 className="text-base sm:text-lg md:text-xl text-black mb-3">
+                            Call Us
+                        </h2>
+                        <a href="tel:+8801759231288" className="text-gray-600 hover:text-black transition-colors block text-sm sm:text-base mb-2">
                             +880 1759-231288
                         </a>
+                        <p className="text-xs sm:text-sm text-gray-500">
+                            Monday - Saturday, 9:00 AM - 6:00 PM (BST)
+                        </p>
+                    </div>
+                    <div>
+                        <h2 className="text-base sm:text-lg md:text-xl text-black mb-3">
+                            Visit Our Office
+                        </h2>
+                        <address className="text-gray-600 not-italic text-sm sm:text-base leading-relaxed">
+                            ABC Point, Uposohor<br />
+                            Sylhet, Bangladesh<br />
+                            Postal Code: 3100
+                        </address>
+                    </div>
+                    <div className="pt-4 border-t border-gray-200">
+                        <h2 className="text-base sm:text-lg md:text-xl text-black mb-3">
+                            Follow Us
+                        </h2>
+                        <p className="text-xs sm:text-sm text-gray-600 mb-3">
+                            Stay connected with us on social media for the latest updates, tips, and insights.
+                        </p>
+                        <div className="flex gap-4">
+                            <a href="https://www.facebook.com/profile.php?id=61582159036502" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black transition-colors text-sm">
+                                Facebook
+                            </a>
+                            <a href="https://www.youtube.com/@AsadSnapper" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black transition-colors text-sm">
+                                YouTube
+                            </a>
+                            <a href="https://wa.me/8801759231288" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black transition-colors text-sm">
+                                WhatsApp
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

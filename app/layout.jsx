@@ -111,12 +111,13 @@ export const metadata = {
   },
   icons: {
     icon: [
-      { url: "/logo.png", type: "image/png" },
+      { url: "/logo_url.png", type: "image/png", sizes: "32x32" },
+      { url: "/logo_url.png", type: "image/png", sizes: "16x16" },
     ],
     apple: [
-      { url: "/logo.png", type: "image/png" },
+      { url: "/logo_url.png", type: "image/png", sizes: "180x180" },
     ],
-    shortcut: "/logo.png",
+    shortcut: "/logo_url.png",
   },
 };
 
@@ -250,10 +251,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/logo.png" type="image/png" sizes="32x32" />
-        <link rel="icon" href="/logo.png" type="image/png" sizes="16x16" />
-        <link rel="apple-touch-icon" href="/logo.png" sizes="180x180" />
-        <link rel="shortcut icon" href="/logo.png" type="image/png" />
+        <link rel="icon" href="/logo_url.png" type="image/png" sizes="32x32" />
+        <link rel="icon" href="/logo_url.png" type="image/png" sizes="16x16" />
+        <link rel="apple-touch-icon" href="/logo_url.png" sizes="180x180" />
+        <link rel="shortcut icon" href="/logo_url.png" type="image/png" />
+        <link rel="preload" href="/logo_url.png" as="image" />
         <link rel="canonical" href="https://www.webcoronet.com" />
         <meta name="geo.region" content="BD-SY" />
         <meta name="geo.placename" content="Sylhet" />

@@ -6,6 +6,7 @@ import Nav from "./Nav";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaWhatsapp, FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa";
+import logo from "@/public/logo.png";
 
 const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -45,25 +46,23 @@ const Header = () => {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           mounted && isScrolled
-            ? "bg-white bg-opacity-80 backdrop-blur-lg shadow-md"
+            ? "bg-base-100  backdrop-blur-lg shadow-md"
             : "bg-transparent"
         }`}
         suppressHydrationWarning
       >
-        <div className="w-full max-w-screen-2xl mx-auto flex justify-between items-center py-4 px-6 md:px-8 lg:px-12 xl:px-16">
+        <div className="w-full max-w-screen-5xl mx-auto flex justify-between items-center py-4 px-6 md:px-8 lg:px-12 xl:px-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group flex-shrink-0">
             <Image 
-              src="/logo.png" 
+              src={logo} 
               alt="Web Coronet Logo" 
-              width={160} 
+              width={300} 
               height={55}
+              quality={100}
               className="h-9 xl:h-12 w-auto transition-transform duration-300 group-hover:scale-105"
               priority
             />
-            <span className="text-lg xl:text-xl font-bold uppercase tracking-wide whitespace-nowrap transition-all duration-300 bg-gradient-to-r from-black via-gray-800 to-black bg-clip-text text-transparent">
-              WEBCORONET
-            </span>
           </Link>
 
           {/* Desktop Navigation */}

@@ -12,7 +12,7 @@ const Agency = () => {
                             Your Agency, Perfectly Optimized for Every Screen Size
                         </h1>
                         <p className='text-xs sm:text-sm md:text-base lg:text-lg text-gray-300 leading-relaxed'>
-                            In today's multi-device world, your website must deliver exceptional experiences everywhere. We specialize in creating responsive, mobile-first designs that adapt beautifully from large desktop displays to smartphones, ensuring your agency always looks professional.
+                            In today&apos;s multi-device world, your website must deliver exceptional experiences everywhere. We specialize in creating responsive, mobile-first designs that adapt beautifully from large desktop displays to smartphones, ensuring your agency always looks professional.
                         </p>
                         <p className='text-xs sm:text-sm md:text-base lg:text-lg text-gray-300 leading-relaxed'>
                             Our responsive approach prioritizes mobile users while maintaining desktop excellence. Every element is carefully crafted to provide optimal viewing, interaction, and conversion across all devices and screen sizes.

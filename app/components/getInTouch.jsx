@@ -19,8 +19,8 @@ const GetInTOuch = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 mt-6 md:mt-8 lg:mt-12">
                 <div className='flex flex-col gap-4 p-6 md:p-8 lg:p-10 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow animation h-full'>
                     <div className='flex items-center gap-4'>
-                        <div className='p-3 bg-blue-100 rounded-lg'>
-                            <PiPen className='text-2xl sm:text-3xl md:text-4xl text-blue-600' />
+                        <div className='p-3 bg-black rounded-lg'>
+                            <PiPen className='text-2xl sm:text-3xl md:text-4xl text-white' />
                         </div>
                         <div className="flex flex-col">
                             <span className='text-xs text-gray-500 uppercase tracking-wide'>Step 01</span>
@@ -42,8 +42,8 @@ const GetInTOuch = () => {
 
                 <div className='flex flex-col gap-4 p-6 md:p-8 lg:p-10 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow animation h-full'>
                     <div className='flex items-center gap-4'>
-                        <div className='p-3 bg-purple-100 rounded-lg'>
-                            <PiMonitor className='text-2xl sm:text-3xl md:text-4xl text-purple-600' />
+                        <div className='p-3 bg-black rounded-lg'>
+                            <PiMonitor className='text-2xl sm:text-3xl md:text-4xl text-white' />
                         </div>
                         <div className="flex flex-col">
                             <span className='text-xs text-gray-500 uppercase tracking-wide'>Step 02</span>
@@ -65,8 +65,8 @@ const GetInTOuch = () => {
 
                 <div className='flex flex-col gap-4 p-6 md:p-8 lg:p-10 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow animation h-full'>
                     <div className='flex items-center gap-4'>
-                        <div className='p-3 bg-green-100 rounded-lg'>
-                            <PiRocketLaunch className='text-2xl sm:text-3xl md:text-4xl text-green-600' />
+                        <div className='p-3 bg-black rounded-lg'>
+                            <PiRocketLaunch className='text-2xl sm:text-3xl md:text-4xl text-white' />
                         </div>
                         <div className="flex flex-col">
                             <span className='text-xs text-gray-500 uppercase tracking-wide'>Step 03</span>
@@ -80,7 +80,7 @@ const GetInTOuch = () => {
                         <AccordionItem value="item-3">
                             <AccordionTrigger className="text-xs sm:text-sm">Learn More</AccordionTrigger>
                             <AccordionContent className="text-xs sm:text-sm text-gray-600">
-                                Post-launch support includes performance monitoring, security updates, content management training, SEO optimization, and regular backups. We're committed to your long-term success.
+                                Post-launch support includes performance monitoring, security updates, content management training, SEO optimization, and regular backups. We&apos;re committed to your long-term success.
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>

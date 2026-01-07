@@ -103,14 +103,14 @@ const Services = () => {
                             At Web Coronet, we offer a complete suite of digital services designed to elevate your business in the digital landscape. From cutting-edge web development to strategic digital marketing, our team combines technical expertise with creative innovation to deliver solutions that drive real results.
                         </p>
                         <p className='text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed'>
-                            Whether you're a startup looking to establish your online presence or an established business seeking to expand your digital footprint, we provide tailored solutions that align with your goals and budget. Our comprehensive approach ensures seamless integration across all digital touchpoints.
+                            Whether you&apos;re a startup looking to establish your online presence or an established business seeking to expand your digital footprint, we provide tailored solutions that align with your goals and budget. Our comprehensive approach ensures seamless integration across all digital touchpoints.
                         </p>
                         <div className='grid grid-cols-2 gap-4 mt-4 w-full max-w-md'>
-                            <div className='bg-gray-50 p-4 rounded-lg'>
+                            <div className='bg-white p-4 rounded-lg border border-gray-200'>
                                 <h4 className='text-sm font-semibold mb-1'>500+ Projects</h4>
                                 <p className='text-xs text-gray-600'>Successfully delivered</p>
                             </div>
-                            <div className='bg-gray-50 p-4 rounded-lg'>
+                            <div className='bg-white p-4 rounded-lg border border-gray-200'>
                                 <h4 className='text-sm font-semibold mb-1'>10+ Years</h4>
                                 <p className='text-xs text-gray-600'>Industry experience</p>
                             </div>

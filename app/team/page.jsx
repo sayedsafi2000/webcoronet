@@ -10,7 +10,19 @@ export const metadata = {
     "web developers",
     "graphic designers",
     "digital marketing experts",
-    "web development team Bangladesh"
+    "web development team Bangladesh",
+    "Sayed Safi",
+    "Sayed Safi web developer",
+    "Sayed Safi Facebook",
+    "Sayed Safi fullstack developer",
+    "Jihan",
+    "Jihan marketing writer",
+    "Jihan content writer",
+    "Jihan Facebook",
+    "MD Foyejur Rahman Reza",
+    "Foyejur Reza",
+    "Foyejur Reza Manager",
+    "Foyejur Reza Facebook"
   ],
   openGraph: {
     title: "Our Team - Meet the Experts | Web Coronet",
@@ -45,6 +57,10 @@ const Team = () => {
         "jobTitle": "Web Developer",
         "description": "Fullstack web developer with 13 years of experience in building and maintaining responsive websites.",
         "url": "https://sayedsafi.me/",
+        "sameAs": [
+          "https://www.facebook.com/sayedsafiii/",
+          "https://sayedsafi.me/"
+        ],
         "worksFor": {
           "@type": "Organization",
           "name": "Web Coronet"
@@ -70,6 +86,34 @@ const Team = () => {
           "@type": "Organization",
           "name": "Web Coronet"
         }
+      },
+      {
+        "@type": "Person",
+        "name": "Jihan",
+        "jobTitle": "Marketer and Content Writer",
+        "description": "Creative marketing and content writer specializing in engaging content creation and digital marketing strategies.",
+        "url": "https://www.facebook.com/NusaitJihan.nhn505",
+        "sameAs": [
+          "https://www.facebook.com/NusaitJihan.nhn505"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Web Coronet"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "MD Foyejur Rahman Reza",
+        "jobTitle": "Manager",
+        "description": "Experienced manager overseeing operations and ensuring smooth workflow at Web Coronet.",
+        "url": "https://www.facebook.com/FoyejurReza",
+        "sameAs": [
+          "https://www.facebook.com/FoyejurReza"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Web Coronet"
+        }
       }
     ]
   };
@@ -82,106 +126,218 @@ const Team = () => {
       />
       <section itemScope itemType="https://schema.org/Organization" className='my-12 md:my-16 lg:my-20 px-4 md:px-6 lg:px-8'>
             <Heading subTitle='Meet the Team' title="The Experts Behind Your Success" />
-            <div className="flex flex-col lg:flex-row items-center justify-between gap-6 md:gap-8 animation bg-white p-4 md:p-6 lg:p-8 rounded-lg shadow-md">
-                <div className='flex flex-col items-start justify-start w-full lg:w-2/3 gap-4 md:gap-5 lg:gap-6'>
-                    <div className='flex items-center gap-3 mb-2'>
-                        <h1 className='text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl'>Asad Jaman</h1>
-                        <span className='px-3 py-1 bg-blue-100 text-blue-700 text-xs font-semibold rounded-full'>CEO & Founder</span>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10 mt-8 md:mt-12">
+                {/* Asad Jaman */}
+                <div className="group relative bg-white overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 animation">
+                    <div className="relative overflow-hidden">
+                        <Image 
+                            className='w-full h-[400px] md:h-[450px] object-cover group-hover:scale-110 transition-transform duration-500' 
+                            src="/Asad-Jaman.jpg"  
+                            quality={100} 
+                            width={1000} 
+                            height={1000} 
+                            alt='Asad Jaman - CEO & Founder of Web Coronet' 
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div className="absolute top-4 left-4 z-10">
+                            <span className='px-3 py-1.5 bg-black text-white text-xs font-semibold shadow-lg'>CEO & Founder</span>
+                        </div>
                     </div>
-                    <p className='text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed'>
-                        Asad Jaman is a visionary leader with over 15 years of experience in web development and digital marketing. His passion for technology and innovation has been the driving force behind Web Coronet's success. Asad specializes in strategic planning, business development, and creating digital solutions that transform businesses.
-                    </p>
-                    <p className='text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed'>
-                        Under his leadership, Web Coronet has grown from a small startup to a trusted digital agency serving clients across Bangladesh and internationally. Asad's expertise spans web architecture, digital marketing strategies, and team management, making him a respected figure in the digital industry.
-                    </p>
-                    <div className='flex flex-wrap gap-2 mt-2'>
-                        <span className='text-xs px-3 py-1 bg-gray-100 text-gray-700 rounded-full'>Web Development</span>
-                        <span className='text-xs px-3 py-1 bg-gray-100 text-gray-700 rounded-full'>Digital Marketing</span>
-                        <span className='text-xs px-3 py-1 bg-gray-100 text-gray-700 rounded-full'>Business Strategy</span>
+                    <div className="p-6 md:p-8">
+                        <div className='mb-3'>
+                            <h2 className='text-xl sm:text-2xl md:text-3xl font-semibold'>Asad Jaman</h2>
+                        </div>
+                        <p className='text-sm md:text-base text-gray-600 leading-relaxed mb-4 line-clamp-3'>
+                            Visionary leader with over 15 years of experience in web development and digital marketing. His passion for technology drives Web Coronet&apos;s success.
+                        </p>
+                        <div className='flex flex-wrap gap-2 mb-4'>
+                            <span className='text-xs px-2 py-1 bg-gray-100 text-gray-700'>Web Development</span>
+                            <span className='text-xs px-2 py-1 bg-gray-100 text-gray-700'>Digital Marketing</span>
+                            <span className='text-xs px-2 py-1 bg-gray-100 text-gray-700'>Business Strategy</span>
+                        </div>
+                        <a href='https://asadsnapper.com/' target='_blank' rel='noopener noreferrer' className='inline-block px-4 py-2 bg-black text-white text-sm hover:bg-gray-800 transition-colors'>
+                            View Profile →
+                        </a>
                     </div>
-                    <a href='https://asadsnapper.com/' target='blank' rel='noopener noreferrer' className='px-6 py-2 md:px-10 md:py-2.5 lg:px-12 lg:py-3 bg-black text-white text-sm md:text-base hover:bg-gray-800 transition-colors rounded mt-2'>
-                        View Profile →
-                    </a>
                 </div>
-                <div className='animation w-full lg:w-1/3'>
-                    <Image className='w-full lg:w-2/3 rounded-2xl mx-auto shadow-lg' src="/Asad-Jaman.jpg"  quality={100} width={1000} height={1000} alt='Asad Jaman - CEO & Founder of Web Coronet' />
+
+                {/* MD Foyejur Rahman Reza */}
+                <div className="group relative bg-white overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 animation">
+                    <div className="relative overflow-hidden">
+                        <Image 
+                            src="/reza.jpg" 
+                            className='w-full h-[400px] md:h-[450px] object-cover group-hover:scale-110 transition-transform duration-500' 
+                            quality={100} 
+                            width={1000} 
+                            height={1000} 
+                            alt='MD Foyejur Rahman Reza - Manager at Web Coronet' 
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div className="absolute top-4 left-4 z-10">
+                            <span className='px-3 py-1.5 bg-black text-white text-xs font-semibold shadow-lg'>Manager</span>
+                        </div>
+                    </div>
+                    <div className="p-6 md:p-8">
+                        <div className='mb-3'>
+                            <h2 className='text-xl sm:text-2xl md:text-3xl font-semibold'>MD Foyejur Rahman Reza</h2>
+                        </div>
+                        <p className='text-sm md:text-base text-gray-600 leading-relaxed mb-4 line-clamp-3'>
+                            Experienced manager overseeing operations and ensuring smooth workflow at Web Coronet. Dedicated to maintaining high standards and facilitating team success.
+                        </p>
+                        <div className='flex flex-wrap gap-2 mb-4'>
+                            <span className='text-xs px-2 py-1 bg-gray-100 text-gray-700'>Operations</span>
+                            <span className='text-xs px-2 py-1 bg-gray-100 text-gray-700'>Management</span>
+                            <span className='text-xs px-2 py-1 bg-gray-100 text-gray-700'>Team Leadership</span>
+                            <span className='text-xs px-2 py-1 bg-gray-100 text-gray-700'>Project Coordination</span>
+                        </div>
+                            <a href='https://www.facebook.com/FoyejurReza' target='_blank' rel='noopener noreferrer' className='inline-block px-4 py-2 bg-black text-white text-sm hover:bg-gray-800 transition-colors'>
+                            Connect on Facebook →
+                        </a>
+                    </div>
+                </div>
+
+                {/* Sayed Safi */}
+                <div className="group relative bg-white overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 animation">
+                    <div className="relative overflow-hidden">
+                        <Image 
+                            src="/sayed-safi-big.jpg" 
+                            className='w-full h-[400px] md:h-[450px] object-cover group-hover:scale-110 transition-transform duration-500' 
+                            quality={100} 
+                            width={1000} 
+                            height={1000} 
+                            alt='Sayed Safi - Fullstack Web Developer at Web Coronet' 
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div className="absolute top-4 left-4 z-10">
+                            <span className='px-3 py-1.5 bg-black text-white text-xs font-semibold shadow-lg'>Fullstack Developer</span>
+                        </div>
+                    </div>
+                    <div className="p-6 md:p-8">
+                        <div className='mb-3'>
+                            <h2 className='text-xl sm:text-2xl md:text-3xl font-semibold'>Sayed Safi</h2>
+                        </div>
+                        <p className='text-sm md:text-base text-gray-600 leading-relaxed mb-4 line-clamp-3'>
+                            Highly skilled fullstack web developer specializing in React, Next.js, and Node.js. Passionate about creating scalable, maintainable applications.
+                        </p>
+                        <div className='flex flex-wrap gap-2 mb-4'>
+                            <span className='text-xs px-2 py-1 bg-gray-100 text-gray-700'>React</span>
+                            <span className='text-xs px-2 py-1 bg-gray-100 text-gray-700'>Next.js</span>
+                            <span className='text-xs px-2 py-1 bg-gray-100 text-gray-700'>Node.js</span>
+                            <span className='text-xs px-2 py-1 bg-gray-100 text-gray-700'>Fullstack</span>
+                        </div>
+                        <div className='flex flex-wrap gap-2'>
+                            <a target='_blank' rel='noopener noreferrer' href='https://sayedsafi.me/' className='inline-block px-4 py-2 bg-black text-white text-sm hover:bg-gray-800 transition-colors'>
+                                Portfolio →
+                            </a>
+                            <a target='_blank' rel='noopener noreferrer' href='https://www.facebook.com/sayedsafiii/' className='inline-block px-4 py-2 bg-black text-white text-sm hover:bg-gray-800 transition-colors'>
+                                Facebook →
+                            </a>
                 </div>
             </div>
-            <div className="flex flex-col lg:flex-row-reverse items-center justify-between gap-6 md:gap-8 animation mt-8 md:mt-12 lg:mt-16 bg-white p-4 md:p-6 lg:p-8 rounded-lg shadow-md">
-                <div className='flex flex-col items-start justify-start w-full lg:w-2/3 gap-4 md:gap-5 lg:gap-6'>
-                    <div className='flex items-center gap-3 mb-2'>
-                        <h1 className='text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl'>Sayed Safi</h1>
-                        <span className='px-3 py-1 bg-green-100 text-green-700 text-xs font-semibold rounded-full'>Fullstack Developer</span>
-                    </div>
-                    <p className='text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed'>
-                        Sayed Safi is a highly skilled fullstack web developer with 3 years of experience in building and maintaining responsive websites and web applications. His expertise spans both frontend and backend development, ensuring seamless user experiences and robust functionality across all projects.
-                    </p>
-                    <p className='text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed'>
-                        Specializing in modern technologies like React, Next.js, Node.js, and various databases, Sayed has successfully delivered numerous complex web solutions. His attention to detail, code quality, and performance optimization makes him an invaluable asset to our development team. He's passionate about creating scalable, maintainable, and user-friendly applications.
-                    </p>
-                    <div className='flex flex-wrap gap-2 mt-2'>
-                        <span className='text-xs px-3 py-1 bg-gray-100 text-gray-700 rounded-full'>React</span>
-                        <span className='text-xs px-3 py-1 bg-gray-100 text-gray-700 rounded-full'>Next.js</span>
-                        <span className='text-xs px-3 py-1 bg-gray-100 text-gray-700 rounded-full'>Node.js</span>
-                        <span className='text-xs px-3 py-1 bg-gray-100 text-gray-700 rounded-full'>Fullstack</span>
-                    </div>
-                    <a target='blank' rel='noopener noreferrer' href='https://sayedsafi.me/' className='px-6 py-2 md:px-10 md:py-2.5 lg:px-12 lg:py-3 bg-black text-white text-sm md:text-base hover:bg-gray-800 transition-colors rounded mt-2'>
-                        View Portfolio →
-                    </a>
                 </div>
-                <div className='animation w-full lg:w-1/3'>
-                    <Image src="/sayed-safi-big.jpg" className='w-full lg:w-2/3 rounded-2xl mx-auto shadow-lg' quality={100} width={1000} height={1000} alt='Sayed Safi - Fullstack Web Developer at Web Coronet' />
+
+                {/* Titun Chandra Dey */}
+                <div className="group relative bg-white overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 animation">
+                    <div className="relative overflow-hidden">
+                        <Image 
+                            src="/titon.jpg" 
+                            className='w-full h-[400px] md:h-[450px] object-cover group-hover:scale-110 transition-transform duration-500' 
+                            quality={100} 
+                            width={1000} 
+                            height={1000} 
+                            alt='Titun Chandra Dey - Lead Designer at Web Coronet' 
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div className="absolute top-4 left-4 z-10">
+                            <span className='px-3 py-1.5 bg-black text-white text-xs font-semibold shadow-lg'>Lead Designer</span>
+                        </div>
+                    </div>
+                    <div className="p-6 md:p-8">
+                        <div className='mb-3'>
+                            <h2 className='text-xl sm:text-2xl md:text-3xl font-semibold'>Titun Chandra Dey</h2>
+                        </div>
+                        <p className='text-sm md:text-base text-gray-600 leading-relaxed mb-4 line-clamp-3'>
+                            Creative force in visual design with exceptional talent for creating stunning, user-friendly interfaces that are both visually captivating and functional.
+                        </p>
+                        <div className='flex flex-wrap gap-2 mb-4'>
+                            <span className='text-xs px-2 py-1 bg-gray-100 text-gray-700'>UI/UX Design</span>
+                            <span className='text-xs px-2 py-1 bg-gray-100 text-gray-700'>Branding</span>
+                            <span className='text-xs px-2 py-1 bg-gray-100 text-gray-700'>Graphic Design</span>
+                        </div>
+                        <a href='https://dribbble.com/ImTitun' target='_blank' rel='noopener noreferrer' className='inline-block px-4 py-2 bg-black text-white text-sm hover:bg-gray-800 transition-colors'>
+                            View Dribbble →
+                        </a>
+                    </div>
                 </div>
+
+                {/* Fareea Mehjebin */}
+                <div className="group relative bg-white overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 animation">
+                    <div className="relative overflow-hidden">
+                        <Image 
+                            src="/marketer.jpg" 
+                            className='w-full h-[400px] md:h-[450px] object-cover group-hover:scale-110 transition-transform duration-500' 
+                            quality={100} 
+                            width={1000} 
+                            height={1000} 
+                            alt='Fareea Mehjebin - Digital Marketing Strategist at Web Coronet' 
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div className="absolute top-4 left-4 z-10">
+                            <span className='px-3 py-1.5 bg-black text-white text-xs font-semibold shadow-lg'>Marketing Strategist</span>
+                        </div>
+                    </div>
+                    <div className="p-6 md:p-8">
+                        <div className='mb-3'>
+                            <h2 className='text-xl sm:text-2xl md:text-3xl font-semibold'>Fareea Mehjebin</h2>
+                        </div>
+                        <p className='text-sm md:text-base text-gray-600 leading-relaxed mb-4 line-clamp-3'>
+                            Strategic digital marketing expert who helps clients achieve their online goals through data-driven marketing campaigns and measurable results.
+                        </p>
+                        <div className='flex flex-wrap gap-2 mb-4'>
+                            <span className='text-xs px-2 py-1 bg-gray-100 text-gray-700'>SEO</span>
+                            <span className='text-xs px-2 py-1 bg-gray-100 text-gray-700'>Social Media</span>
+                            <span className='text-xs px-2 py-1 bg-gray-100 text-gray-700'>PPC</span>
+                            <span className='text-xs px-2 py-1 bg-gray-100 text-gray-700'>Content Marketing</span>
+                        </div>
+                        <a href='https://web.facebook.com/mehjebin.fareea' target='_blank' rel='noopener noreferrer' className='inline-block px-4 py-2 bg-black text-white text-sm hover:bg-gray-800 transition-colors'>
+                            Connect on Facebook →
+                        </a>
             </div>
-            <div className="flex flex-col lg:flex-row items-center justify-between gap-6 md:gap-8 animation mt-8 md:mt-12 lg:mt-16 bg-white p-4 md:p-6 lg:p-8 rounded-lg shadow-md">
-                <div className='flex flex-col items-start justify-start w-full lg:w-2/3 gap-4 md:gap-5 lg:gap-6'>
-                    <div className='flex items-center gap-3 mb-2'>
-                        <h1 className='text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl'>Titun Chandra Dey</h1>
-                        <span className='px-3 py-1 bg-purple-100 text-purple-700 text-xs font-semibold rounded-full'>Lead Designer</span>
-                    </div>
-                    <p className='text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed'>
-                        Titun Chandra Dey is a creative force in visual design with exceptional talent for creating stunning, user-friendly interfaces. His keen eye for aesthetics and deep understanding of user experience principles ensures that every project he touches is both visually captivating and highly functional.
-                    </p>
-                    <p className='text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed'>
-                        With expertise in UI/UX design, branding, and graphic design, Titun has contributed to numerous successful projects. His work combines modern design trends with timeless principles, creating visual experiences that resonate with users and effectively communicate brand messages. His portfolio showcases a diverse range of projects from startups to established brands.
-                    </p>
-                    <div className='flex flex-wrap gap-2 mt-2'>
-                        <span className='text-xs px-3 py-1 bg-gray-100 text-gray-700 rounded-full'>UI/UX Design</span>
-                        <span className='text-xs px-3 py-1 bg-gray-100 text-gray-700 rounded-full'>Branding</span>
-                        <span className='text-xs px-3 py-1 bg-gray-100 text-gray-700 rounded-full'>Graphic Design</span>
-                    </div>
-                    <a href='https://dribbble.com/ImTitun' target='blank' rel='noopener noreferrer' className='px-6 py-2 md:px-10 md:py-2.5 lg:px-12 lg:py-3 bg-black text-white text-sm md:text-base hover:bg-gray-800 transition-colors rounded mt-2'>
-                        View Dribbble →
-                    </a>
                 </div>
-                <div className='animation w-full lg:w-1/3'>
-                    <Image src="/titon.jpg" className='w-full lg:w-2/3 rounded-2xl mx-auto shadow-lg' quality={100} width={1000} height={1000} alt='Titun Chandra Dey - Lead Designer at Web Coronet' />
-                </div>
-            </div>
-            <div className="flex flex-col lg:flex-row-reverse items-center justify-between gap-6 md:gap-8 animation mt-8 md:mt-12 lg:mt-16 bg-white p-4 md:p-6 lg:p-8 rounded-lg shadow-md">
-                <div className='flex flex-col items-start justify-start w-full lg:w-2/3 gap-4 md:gap-5 lg:gap-6'>
-                    <div className='flex items-center gap-3 mb-2'>
-                        <h1 className='text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl'>Fareea Mehjebin</h1>
-                        <span className='px-3 py-1 bg-orange-100 text-orange-700 text-xs font-semibold rounded-full'>Marketing Strategist</span>
+
+                {/* Jihan */}
+                <div className="group relative bg-white overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 animation">
+                    <div className="relative overflow-hidden">
+                        <Image 
+                            src="/jihan.jpg" 
+                            className='w-full h-[400px] md:h-[450px] object-cover group-hover:scale-110 transition-transform duration-500' 
+                            quality={100} 
+                            width={1000} 
+                            height={1000} 
+                            alt='Jihan - Marketer and Content Writer at Web Coronet' 
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div className="absolute top-4 left-4 z-10">
+                            <span className='px-3 py-1.5 bg-black text-white text-xs font-semibold shadow-lg'>Marketer and Content Writer</span>
+                        </div>
                     </div>
-                    <p className='text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed'>
-                        Fareea Mehjebin is a strategic digital marketing expert who helps our clients achieve their online goals through data-driven marketing campaigns. Her comprehensive approach to digital marketing combines SEO, social media, content marketing, and paid advertising to deliver measurable results.
-                    </p>
-                    <p className='text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed'>
-                        With a deep understanding of market trends and consumer behavior, Fareea develops customized marketing strategies that align with business objectives. Her expertise in analytics and performance tracking ensures that every campaign is optimized for maximum ROI. She's passionate about helping businesses grow their online presence and reach their target audiences effectively.
-                    </p>
-                    <div className='flex flex-wrap gap-2 mt-2'>
-                        <span className='text-xs px-3 py-1 bg-gray-100 text-gray-700 rounded-full'>SEO</span>
-                        <span className='text-xs px-3 py-1 bg-gray-100 text-gray-700 rounded-full'>Social Media</span>
-                        <span className='text-xs px-3 py-1 bg-gray-100 text-gray-700 rounded-full'>PPC</span>
-                        <span className='text-xs px-3 py-1 bg-gray-100 text-gray-700 rounded-full'>Content Marketing</span>
+                    <div className="p-6 md:p-8">
+                        <div className='mb-3'>
+                            <h2 className='text-xl sm:text-2xl md:text-3xl font-semibold'>Jihan</h2>
+                        </div>
+                        <p className='text-sm md:text-base text-gray-600 leading-relaxed mb-4 line-clamp-3'>
+                            Creative marketing and content writer specializing in crafting engaging content that resonates with target audiences and builds strong brand connections.
+                        </p>
+                        <div className='flex flex-wrap gap-2 mb-4'>
+                            <span className='text-xs px-2 py-1 bg-gray-100 text-gray-700'>Content Writing</span>
+                            <span className='text-xs px-2 py-1 bg-gray-100 text-gray-700'>Copywriting</span>
+                            <span className='text-xs px-2 py-1 bg-gray-100 text-gray-700'>Digital Marketing</span>
+                            <span className='text-xs px-2 py-1 bg-gray-100 text-gray-700'>Social Media</span>
+                        </div>
+                        <a href='https://www.facebook.com/NusaitJihan.nhn505' target='_blank' rel='noopener noreferrer' className='inline-block px-4 py-2 bg-black text-white text-sm hover:bg-gray-800 transition-colors'>
+                            Connect on Facebook →
+                        </a>
                     </div>
-                    <a href='https://web.facebook.com/mehjebin.fareea' target='blank' rel='noopener noreferrer' className='px-6 py-2 md:px-10 md:py-2.5 lg:px-12 lg:py-3 bg-black text-white text-sm md:text-base hover:bg-gray-800 transition-colors rounded mt-2'>
-                        Connect on Facebook →
-                    </a>
-                </div>
-                <div className='animation w-full lg:w-1/3'>
-                    <Image src="/marketer.jpg" className='w-full lg:w-2/3 rounded-2xl mx-auto shadow-lg' quality={100} width={1000} height={1000} alt='Fareea Mehjebin - Digital Marketing Strategist at Web Coronet' />
                 </div>
             </div>
         </section>

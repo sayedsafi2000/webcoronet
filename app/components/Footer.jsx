@@ -41,6 +41,16 @@ const Footer = () => {
               <FaFacebook />
             </Link>
             <Link 
+              href="https://www.facebook.com/sayedsafiii/" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors"
+              aria-label="Sayed Safi Facebook"
+              title="Sayed Safi - Web Developer"
+            >
+              <FaFacebook />
+            </Link>
+            <Link 
               href="https://wa.me/8801759231288" 
               target="_blank"
               rel="noopener noreferrer"
@@ -94,10 +104,8 @@ const Footer = () => {
               className="inline-block transition-transform hover:scale-105"
               aria-label="Download on App Store"
             >
-              <Image
-                height={40}
-                width={120}
-                src="/app-store.jpg"
+              <img
+                src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&releaseDate=1276560000"
                 alt="Download on App Store"
                 className="h-8 md:h-10 w-auto object-contain"
               />
@@ -110,7 +118,7 @@ const Footer = () => {
               <Image
                 height={40}
                 width={135}
-                src="/google-play.png"
+                src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
                 alt="Get it on Google Play"
                 className="h-8 md:h-10 w-auto object-contain"
               />

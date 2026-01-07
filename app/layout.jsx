@@ -56,7 +56,19 @@ export const metadata = {
     "WordPress development",
     "WooCommerce development",
     "content marketing",
-    "email marketing"
+    "email marketing",
+    "Sayed Safi",
+    "Sayed Safi web developer",
+    "Sayed Safi fullstack developer",
+    "Sayed Safi Facebook",
+    "Jihan",
+    "Jihan marketing writer",
+    "Jihan content writer",
+    "Jihan Facebook",
+    "MD Foyejur Rahman Reza",
+    "Foyejur Reza",
+    "Foyejur Reza Manager",
+    "Foyejur Reza Facebook"
   ],
   authors: [{ name: "Web Coronet" }],
   creator: "Web Coronet",
@@ -265,6 +277,8 @@ export default function RootLayout({ children }) {
         <meta name="revisit-after" content="7 days" />
         <meta name="distribution" content="global" />
         <meta name="rating" content="general" />
+        <meta name="author" content="Sayed Safi, Web Coronet" />
+        <link rel="author" href="https://www.facebook.com/sayedsafiii/" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
@@ -272,6 +286,86 @@ export default function RootLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Sayed Safi",
+            "jobTitle": "Fullstack Web Developer",
+            "description": "Sayed Safi is a highly skilled fullstack web developer specializing in React, Next.js, Node.js, and modern web technologies.",
+            "url": "https://sayedsafi.me/",
+            "sameAs": [
+              "https://www.facebook.com/sayedsafiii/",
+              "https://sayedsafi.me/"
+            ],
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Web Coronet",
+              "url": "https://www.webcoronet.com"
+            },
+            "knowsAbout": [
+              "Web Development",
+              "React",
+              "Next.js",
+              "Node.js",
+              "Fullstack Development",
+              "Frontend Development",
+              "Backend Development"
+            ]
+          }) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Jihan",
+            "jobTitle": "Marketer and Content Writer",
+            "description": "Jihan is a creative marketing and content writer specializing in engaging content creation and digital marketing strategies.",
+            "url": "https://www.facebook.com/NusaitJihan.nhn505",
+            "sameAs": [
+              "https://www.facebook.com/NusaitJihan.nhn505"
+            ],
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Web Coronet",
+              "url": "https://www.webcoronet.com"
+            },
+            "knowsAbout": [
+              "Content Writing",
+              "Copywriting",
+              "Digital Marketing",
+              "Social Media Marketing",
+              "Content Strategy"
+            ]
+          }) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "MD Foyejur Rahman Reza",
+            "jobTitle": "Manager",
+            "description": "Experienced manager overseeing operations and ensuring smooth workflow at Web Coronet.",
+            "url": "https://www.facebook.com/FoyejurReza",
+            "sameAs": [
+              "https://www.facebook.com/FoyejurReza"
+            ],
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Web Coronet",
+              "url": "https://www.webcoronet.com"
+            },
+            "knowsAbout": [
+              "Operations Management",
+              "Team Leadership",
+              "Project Coordination",
+              "Business Operations"
+            ]
+          }) }}
         />
       </head>
       <body

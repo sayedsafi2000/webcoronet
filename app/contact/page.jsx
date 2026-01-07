@@ -102,7 +102,7 @@ const Contact = () => {
                             Get in Touch
                         </h2>
                         <p className="text-xs sm:text-sm md:text-base text-gray-600 mb-4">
-                            We're here to help bring your digital vision to life. Whether you have a question about our services, need a quote, or want to discuss your project, our team is ready to assist you.
+                            We&apos;re here to help bring your digital vision to life. Whether you have a question about our services, need a quote, or want to discuss your project, our team is ready to assist you.
                         </p>
                     </div>
                     <div>
